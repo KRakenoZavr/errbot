@@ -5,12 +5,15 @@ import logging
 # the options in the more complete config-template.py from here:
 # https://raw.githubusercontent.com/errbotio/errbot/master/errbot/config-template.py
 
+# privacy в настройках botfather нужно отключить для групп
 BACKEND = 'Telegram'
 BOT_IDENTITY = {
     'token': '5000899571:AAH4cS87dlO9BXCXoaxgEFYhR2ku9fwI1TU',
 }
 BOT_PREFIX = '/'
 BOT_ADMINS = (208907614,)
+# перед использование добавить id групп
+CHATROOM_PRESENCE = (-732525540,)
 
 
 BOT_DATA_DIR = r'/home/dake/opera/errbot/data'
