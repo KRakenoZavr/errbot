@@ -1,0 +1,1752 @@
+2022-01-11 10:49:46,478 INFO     errbot.bootstrap          Found Storage plugin: Shelf.
+2022-01-11 10:49:46,485 INFO     errbot.bootstrap          Found Backend plugin: Text
+2022-01-11 10:49:46,485 DEBUG    errbot.storage            Opening storage 'repomgr'
+2022-01-11 10:49:46,486 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/repomgr.db
+2022-01-11 10:49:46,528 DEBUG    errbot.core               ErrBot init.
+2022-01-11 10:49:46,528 DEBUG    errbot.backends.base      Backend init.
+2022-01-11 10:49:46,537 DEBUG    errbot.core               created a thread pool of size 10.
+2022-01-11 10:49:46,540 DEBUG    errbot.backends.text      Text Backend Init.
+2022-01-11 10:49:46,540 DEBUG    errbot.backends.text      Bot username set at @errbot.
+2022-01-11 10:49:46,542 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2022-01-11 10:49:46,543 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2022-01-11 10:49:46,543 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2022-01-11 10:49:46,544 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2022-01-11 10:49:46,545 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2022-01-11 10:49:46,545 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2022-01-11 10:49:46,546 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2022-01-11 10:49:46,546 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2022-01-11 10:49:46,546 DEBUG    MARKDOWN                  Successfully loaded extension "errbot.rendering.ansiext.AnsiExtension".
+2022-01-11 10:49:46,554 DEBUG    errbot.storage            Opening storage 'core'
+2022-01-11 10:49:46,554 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/core.db
+2022-01-11 10:49:46,559 DEBUG    errbot.core               Initializing backend storage
+2022-01-11 10:49:46,560 DEBUG    errbot.storage            Opening storage 'text_backend'
+2022-01-11 10:49:46,560 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/text_backend.db
+2022-01-11 10:49:46,565 DEBUG    errbot.plugin_manager     New entries added to sys.path:
+2022-01-11 10:49:46,565 DEBUG    errbot.plugin_manager     /home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins
+2022-01-11 10:49:46,565 DEBUG    errbot.plugin_manager     /home/dake/opera/errbot/plugins/err-example
+2022-01-11 10:49:46,657 INFO     errbot                    webhooks:  Flag to bind /echo to echo
+2022-01-11 10:49:46,657 DEBUG    errbot.plugins.Webserver  Logger for plugin initialized...
+2022-01-11 10:49:46,658 DEBUG    errbot.plugins.Plugins    Logger for plugin initialized...
+2022-01-11 10:49:46,659 DEBUG    errbot.plugins.ACLs       Logger for plugin initialized...
+2022-01-11 10:49:46,659 DEBUG    errbot.plugins.Help       Logger for plugin initialized...
+2022-01-11 10:49:46,686 DEBUG    errbot.plugins.VersionChecker Logger for plugin initialized...
+2022-01-11 10:49:46,688 DEBUG    errbot.plugins.TextCmds   Logger for plugin initialized...
+2022-01-11 10:49:46,690 DEBUG    errbot.plugins.Flows      Logger for plugin initialized...
+2022-01-11 10:49:46,691 DEBUG    errbot.plugins.CommandNotFoundFilter Logger for plugin initialized...
+2022-01-11 10:49:46,692 DEBUG    errbot.plugins.Health     Logger for plugin initialized...
+2022-01-11 10:49:46,693 DEBUG    errbot.plugins.Utils      Logger for plugin initialized...
+2022-01-11 10:49:46,694 DEBUG    errbot.plugins.Backup     Logger for plugin initialized...
+2022-01-11 10:49:46,694 DEBUG    errbot.plugins.ChatRoom   Logger for plugin initialized...
+2022-01-11 10:49:46,695 DEBUG    errbot.plugins.Example    Logger for plugin initialized...
+2022-01-11 10:49:46,696 DEBUG    errbot.bootstrap          Start serving commands from the text backend.
+2022-01-11 10:49:46,699 INFO     errbot.core               Activate internal commands
+2022-01-11 10:49:46,699 INFO     errbot.plugin_manager     Activate bot plugins...
+2022-01-11 10:49:46,699 INFO     errbot.plugin_manager     Activate plugin: Webserver.
+2022-01-11 10:49:46,699 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-11 10:49:46,699 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2022-01-11 10:49:46,699 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2022-01-11 10:49:46,699 INFO     errbot.core_plugins.wsview Webhook routing echo
+2022-01-11 10:49:46,700 INFO     errbot.plugin_manager     Activate plugin: Plugins.
+2022-01-11 10:49:46,700 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-11 10:49:46,700 DEBUG    errbot.botplugin          Init storage for Plugins.
+2022-01-11 10:49:46,700 DEBUG    errbot.storage            Opening storage 'Plugins'
+2022-01-11 10:49:46,700 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Plugins.db
+2022-01-11 10:49:46,705 DEBUG    errbot.core               Adding command : plugin_activate -> plugin_activate.
+2022-01-11 10:49:46,705 DEBUG    errbot.core               Adding command : plugin_blacklist -> plugin_blacklist.
+2022-01-11 10:49:46,705 DEBUG    errbot.core               Adding command : plugin_config -> plugin_config.
+2022-01-11 10:49:46,705 DEBUG    errbot.core               Adding command : plugin_deactivate -> plugin_deactivate.
+2022-01-11 10:49:46,705 DEBUG    errbot.core               Adding command : plugin_info -> plugin_info.
+2022-01-11 10:49:46,705 DEBUG    errbot.core               Adding command : plugin_reload -> plugin_reload.
+2022-01-11 10:49:46,705 DEBUG    errbot.core               Adding command : plugin_unblacklist -> plugin_unblacklist.
+2022-01-11 10:49:46,705 DEBUG    errbot.core               Adding command : repos -> repos.
+2022-01-11 10:49:46,705 DEBUG    errbot.core               Adding command : repos_install -> repos_install.
+2022-01-11 10:49:46,705 DEBUG    errbot.core               Adding command : repos_search -> repos_search.
+2022-01-11 10:49:46,705 DEBUG    errbot.core               Adding command : repos_uninstall -> repos_uninstall.
+2022-01-11 10:49:46,705 DEBUG    errbot.core               Adding command : repos_update -> repos_update.
+2022-01-11 10:49:46,705 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2022-01-11 10:49:46,705 INFO     errbot.plugin_manager     Activate plugin: ACLs.
+2022-01-11 10:49:46,706 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-11 10:49:46,706 DEBUG    errbot.botplugin          Init storage for ACLs.
+2022-01-11 10:49:46,706 DEBUG    errbot.storage            Opening storage 'ACLs'
+2022-01-11 10:49:46,706 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/ACLs.db
+2022-01-11 10:49:46,709 DEBUG    errbot.core               Adding command filter: acls
+2022-01-11 10:49:46,709 INFO     errbot.core_plugins.wsview Checking ACLS for webhooks
+2022-01-11 10:49:46,709 INFO     errbot.plugin_manager     Activate plugin: Help.
+2022-01-11 10:49:46,710 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-11 10:49:46,710 DEBUG    errbot.botplugin          Init storage for Help.
+2022-01-11 10:49:46,710 DEBUG    errbot.storage            Opening storage 'Help'
+2022-01-11 10:49:46,710 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Help.db
+2022-01-11 10:49:46,713 DEBUG    errbot.core               Adding command : about -> about.
+2022-01-11 10:49:46,714 DEBUG    errbot.core               Adding command : apropos -> apropos.
+2022-01-11 10:49:46,714 DEBUG    errbot.core               Adding command : help -> help.
+2022-01-11 10:49:46,714 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2022-01-11 10:49:46,714 INFO     errbot.plugin_manager     Activate plugin: VersionChecker.
+2022-01-11 10:49:46,714 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-11 10:49:46,714 INFO     errbot.plugins.VersionChecker Skip version checking under text mode.
+2022-01-11 10:49:46,715 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2022-01-11 10:49:46,715 INFO     errbot.plugin_manager     Activate plugin: TextCmds.
+2022-01-11 10:49:46,715 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-11 10:49:46,715 DEBUG    errbot.botplugin          Init storage for TextCmds.
+2022-01-11 10:49:46,715 DEBUG    errbot.storage            Opening storage 'TextCmds'
+2022-01-11 10:49:46,715 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/TextCmds.db
+2022-01-11 10:49:46,718 DEBUG    errbot.core               Adding command : asadmin -> asadmin.
+2022-01-11 10:49:46,719 DEBUG    errbot.core               Adding command : asuser -> asuser.
+2022-01-11 10:49:46,719 DEBUG    errbot.core               Adding command : inperson -> inperson.
+2022-01-11 10:49:46,719 DEBUG    errbot.core               Adding command : inroom -> inroom.
+2022-01-11 10:49:46,719 DEBUG    errbot.core               Adding command : ml -> ml.
+2022-01-11 10:49:46,719 INFO     errbot.core_plugins.wsview Checking TextModeCmds for webhooks
+2022-01-11 10:49:46,719 INFO     errbot.plugin_manager     Activate plugin: Flows.
+2022-01-11 10:49:46,719 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-11 10:49:46,719 DEBUG    errbot.botplugin          Init storage for Flows.
+2022-01-11 10:49:46,719 DEBUG    errbot.storage            Opening storage 'Flows'
+2022-01-11 10:49:46,719 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Flows.db
+2022-01-11 10:49:46,723 DEBUG    errbot.core               Adding command : flows_kill -> flows_kill.
+2022-01-11 10:49:46,723 DEBUG    errbot.core               Adding command : flows_list -> flows_list.
+2022-01-11 10:49:46,723 DEBUG    errbot.core               Adding command : flows_show -> flows_show.
+2022-01-11 10:49:46,723 DEBUG    errbot.core               Adding command : flows_start -> flows_start.
+2022-01-11 10:49:46,723 DEBUG    errbot.core               Adding command : flows_status -> flows_status.
+2022-01-11 10:49:46,723 DEBUG    errbot.core               Adding command : flows_stop -> flows_stop.
+2022-01-11 10:49:46,723 INFO     errbot.core_plugins.wsview Checking Flows for webhooks
+2022-01-11 10:49:46,723 INFO     errbot.plugin_manager     Activate plugin: CommandNotFoundFilter.
+2022-01-11 10:49:46,723 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-11 10:49:46,723 DEBUG    errbot.botplugin          Init storage for CommandNotFoundFilter.
+2022-01-11 10:49:46,723 DEBUG    errbot.storage            Opening storage 'CommandNotFoundFilter'
+2022-01-11 10:49:46,723 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/CommandNotFoundFilter.db
+2022-01-11 10:49:46,727 DEBUG    errbot.core               Adding command filter: cnf_filter
+2022-01-11 10:49:46,727 INFO     errbot.core_plugins.wsview Checking CommandNotFoundFilter for webhooks
+2022-01-11 10:49:46,727 INFO     errbot.plugin_manager     Activate plugin: Health.
+2022-01-11 10:49:46,727 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-11 10:49:46,727 DEBUG    errbot.botplugin          Init storage for Health.
+2022-01-11 10:49:46,728 DEBUG    errbot.storage            Opening storage 'Health'
+2022-01-11 10:49:46,728 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Health.db
+2022-01-11 10:49:46,731 DEBUG    errbot.core               Adding command : restart -> restart.
+2022-01-11 10:49:46,731 DEBUG    errbot.core               Adding command : shutdown -> shutdown.
+2022-01-11 10:49:46,731 DEBUG    errbot.core               Adding command : status -> status.
+2022-01-11 10:49:46,731 DEBUG    errbot.core               Adding command : status_gc -> status_gc.
+2022-01-11 10:49:46,731 DEBUG    errbot.core               Adding command : status_load -> status_load.
+2022-01-11 10:49:46,731 DEBUG    errbot.core               Adding command : status_plugins -> status_plugins.
+2022-01-11 10:49:46,731 DEBUG    errbot.core               Adding command : uptime -> uptime.
+2022-01-11 10:49:46,731 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2022-01-11 10:49:46,731 INFO     errbot.plugin_manager     Activate plugin: Utils.
+2022-01-11 10:49:46,731 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-11 10:49:46,731 DEBUG    errbot.botplugin          Init storage for Utils.
+2022-01-11 10:49:46,731 DEBUG    errbot.storage            Opening storage 'Utils'
+2022-01-11 10:49:46,732 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Utils.db
+2022-01-11 10:49:46,735 DEBUG    errbot.core               Adding command : echo -> echo.
+2022-01-11 10:49:46,735 DEBUG    errbot.core               Adding command : history -> history.
+2022-01-11 10:49:46,735 DEBUG    errbot.core               Adding command : log_tail -> log_tail.
+2022-01-11 10:49:46,735 DEBUG    errbot.core               Adding command : render_test -> render_test.
+2022-01-11 10:49:46,735 DEBUG    errbot.core               Adding command : whoami -> whoami.
+2022-01-11 10:49:46,735 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2022-01-11 10:49:46,735 INFO     errbot.plugin_manager     Activate plugin: Backup.
+2022-01-11 10:49:46,735 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-11 10:49:46,735 DEBUG    errbot.botplugin          Init storage for Backup.
+2022-01-11 10:49:46,735 DEBUG    errbot.storage            Opening storage 'Backup'
+2022-01-11 10:49:46,735 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Backup.db
+2022-01-11 10:49:46,739 DEBUG    errbot.core               Adding command : backup -> backup.
+2022-01-11 10:49:46,739 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2022-01-11 10:49:46,739 INFO     errbot.plugin_manager     Activate plugin: ChatRoom.
+2022-01-11 10:49:46,739 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-11 10:49:46,739 DEBUG    errbot.botplugin          Init storage for ChatRoom.
+2022-01-11 10:49:46,739 DEBUG    errbot.storage            Opening storage 'ChatRoom'
+2022-01-11 10:49:46,739 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/ChatRoom.db
+2022-01-11 10:49:46,743 DEBUG    errbot.core               Adding command : room_create -> room_create.
+2022-01-11 10:49:46,743 DEBUG    errbot.core               Adding command : room_destroy -> room_destroy.
+2022-01-11 10:49:46,743 DEBUG    errbot.core               Adding command : room_invite -> room_invite.
+2022-01-11 10:49:46,743 DEBUG    errbot.core               Adding command : room_join -> room_join.
+2022-01-11 10:49:46,743 DEBUG    errbot.core               Adding command : room_leave -> room_leave.
+2022-01-11 10:49:46,743 DEBUG    errbot.core               Adding command : room_list -> room_list.
+2022-01-11 10:49:46,743 DEBUG    errbot.core               Adding command : room_occupants -> room_occupants.
+2022-01-11 10:49:46,743 DEBUG    errbot.core               Adding command : room_topic -> room_topic.
+2022-01-11 10:49:46,743 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2022-01-11 10:49:46,743 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2022-01-11 10:49:46,743 INFO     errbot.plugin_manager     Activate plugin: Example.
+2022-01-11 10:49:46,743 DEBUG    errbot.templating         No templates directory found for this plugin [Looking for /home/dake/opera/errbot/plugins/err-example/templates]
+2022-01-11 10:49:46,743 DEBUG    errbot.botplugin          Init storage for Example.
+2022-01-11 10:49:46,743 DEBUG    errbot.storage            Opening storage 'Example'
+2022-01-11 10:49:46,743 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Example.db
+2022-01-11 10:49:46,746 DEBUG    errbot.core               Adding command : tryme -> tryme.
+2022-01-11 10:49:46,747 INFO     errbot.core_plugins.wsview Checking Example for webhooks
+2022-01-11 10:49:46,747 DEBUG    errbot.plugin_manager     Activate flow plugins ...
+2022-01-11 10:49:46,747 INFO     errbot.core               Notifying connection to all the plugins...
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Trigger callback_connect on Plugins.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Trigger callback_connect on ACLS.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Trigger callback_connect on Help.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Trigger callback_connect on TextModeCmds.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Trigger callback_connect on Flows.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Trigger callback_connect on CommandNotFoundFilter.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Trigger callback_connect on Health.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Trigger callback_connect on Utils.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Trigger callback_connect on Backup.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Trigger callback_connect on ChatRoom.
+2022-01-11 10:49:46,747 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Trigger callback_connect on Example.
+2022-01-11 10:49:46,747 INFO     errbot.core               Plugin activation done.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Triggering callback_presence on Plugins.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Triggering callback_presence on ACLs.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Triggering callback_presence on Help.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Triggering callback_presence on TextCmds.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Triggering callback_presence on Flows.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Triggering callback_presence on CommandNotFoundFilter.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Triggering callback_presence on Health.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Triggering callback_presence on Utils.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Triggering callback_presence on Backup.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Triggering callback_presence on ChatRoom.
+2022-01-11 10:49:46,747 DEBUG    errbot.core               Triggering callback_presence on Example.
+2022-01-11 10:50:03,199 DEBUG    errbot.core               *** frm = @CHANGE_ME
+2022-01-11 10:50:03,200 DEBUG    errbot.core               *** username = CHANGE_ME
+2022-01-11 10:50:03,200 DEBUG    errbot.core               *** text = !help
+2022-01-11 10:50:03,200 DEBUG    errbot.plugins.ACLs       Check help for ACLs.
+2022-01-11 10:50:03,200 INFO     errbot.plugins.ACLs       Matching ACL {} against username @CHANGE_ME for command Help:help.
+2022-01-11 10:50:03,200 DEBUG    errbot.plugins.ACLs       Check if help is admin only command.
+2022-01-11 10:50:03,200 INFO     errbot.core               Processing command "help" with parameters "" from @CHANGE_ME
+2022-01-11 10:50:03,200 DEBUG    errbot.core               Triggering callback_message on Plugins.
+2022-01-11 10:50:03,200 DEBUG    errbot.core               Triggering callback_message on ACLs.
+2022-01-11 10:50:03,200 DEBUG    errbot.core               Triggering callback_message on Help.
+2022-01-11 10:50:03,200 DEBUG    errbot.core               Triggering callback_message on TextCmds.
+2022-01-11 10:50:03,200 DEBUG    errbot.flow               Test if the command help is a trigger for an inflight flow ...
+2022-01-11 10:50:03,201 DEBUG    errbot.core               Triggering callback_message on Flows.
+2022-01-11 10:50:03,201 DEBUG    errbot.flow               None matched.
+2022-01-11 10:50:03,201 DEBUG    errbot.core               Triggering callback_message on CommandNotFoundFilter.
+2022-01-11 10:50:03,206 DEBUG    errbot.core               Triggering callback_message on Health.
+2022-01-11 10:50:03,206 DEBUG    errbot.core               Triggering callback_message on Utils.
+2022-01-11 10:50:03,206 DEBUG    errbot.core               Triggering callback_message on Backup.
+2022-01-11 10:50:03,206 DEBUG    errbot.core               Triggering callback_message on ChatRoom.
+2022-01-11 10:50:03,206 DEBUG    errbot.core               Triggering callback_message on Example.
+2022-01-11 10:50:03,207 DEBUG    errbot.flow               Test if the command help is a trigger for an inflight flow ...
+2022-01-11 10:50:03,207 DEBUG    errbot.flow               None matched.
+2022-01-11 10:50:03,208 DEBUG    errbot.flow               Test if the command help is an auto-trigger for any flow ...
+2022-01-11 16:17:21,106 DEBUG    errbot.core               *** frm = @CHANGE_ME
+2022-01-11 16:17:21,106 DEBUG    errbot.core               *** username = CHANGE_ME
+2022-01-11 16:17:21,106 DEBUG    errbot.core               *** text = exit
+2022-01-11 16:17:21,106 DEBUG    errbot.core               Triggering callback_message on Plugins.
+2022-01-11 16:17:21,106 DEBUG    errbot.core               Triggering callback_message on ACLs.
+2022-01-11 16:17:21,106 DEBUG    errbot.core               Triggering callback_message on Help.
+2022-01-11 16:17:21,106 DEBUG    errbot.core               Triggering callback_message on TextCmds.
+2022-01-11 16:17:21,106 DEBUG    errbot.core               Triggering callback_message on Flows.
+2022-01-11 16:17:21,106 DEBUG    errbot.core               Triggering callback_message on CommandNotFoundFilter.
+2022-01-11 16:17:21,106 DEBUG    errbot.core               Triggering callback_message on Health.
+2022-01-11 16:17:21,106 DEBUG    errbot.core               Triggering callback_message on Utils.
+2022-01-11 16:17:21,106 DEBUG    errbot.core               Triggering callback_message on Backup.
+2022-01-11 16:17:21,106 DEBUG    errbot.core               Triggering callback_message on ChatRoom.
+2022-01-11 16:17:21,106 DEBUG    errbot.core               Triggering callback_message on Example.
+2022-01-11 16:17:29,489 DEBUG    errbot.core               Triggering callback_presence on Plugins.
+2022-01-11 16:17:29,489 DEBUG    errbot.core               Triggering callback_presence on ACLs.
+2022-01-11 16:17:29,489 DEBUG    errbot.core               Triggering callback_presence on Help.
+2022-01-11 16:17:29,489 DEBUG    errbot.core               Triggering callback_presence on TextCmds.
+2022-01-11 16:17:29,489 DEBUG    errbot.core               Triggering callback_presence on Flows.
+2022-01-11 16:17:29,489 DEBUG    errbot.core               Triggering callback_presence on CommandNotFoundFilter.
+2022-01-11 16:17:29,489 DEBUG    errbot.core               Triggering callback_presence on Health.
+2022-01-11 16:17:29,489 DEBUG    errbot.core               Triggering callback_presence on Utils.
+2022-01-11 16:17:29,489 DEBUG    errbot.core               Triggering callback_presence on Backup.
+2022-01-11 16:17:29,489 DEBUG    errbot.core               Triggering callback_presence on ChatRoom.
+2022-01-11 16:17:29,489 DEBUG    errbot.core               Triggering callback_presence on Example.
+2022-01-11 16:17:29,489 DEBUG    errbot.backends.text      Trigger disconnect callback
+2022-01-11 16:17:29,489 INFO     errbot.core               Disconnect callback, deactivating all the plugins.
+2022-01-11 16:17:29,490 DEBUG    errbot.storage            Closed storage 'Plugins'
+2022-01-11 16:17:29,491 DEBUG    errbot.storage            Closed storage 'ACLs'
+2022-01-11 16:17:29,491 DEBUG    errbot.core               Removing command filter: acls
+2022-01-11 16:17:29,492 DEBUG    errbot.storage            Closed storage 'Help'
+2022-01-11 16:17:29,494 DEBUG    errbot.storage            Closed storage 'TextCmds'
+2022-01-11 16:17:29,495 DEBUG    errbot.storage            Closed storage 'Flows'
+2022-01-11 16:17:29,495 DEBUG    errbot.storage            Closed storage 'CommandNotFoundFilter'
+2022-01-11 16:17:29,495 DEBUG    errbot.core               Removing command filter: cnf_filter
+2022-01-11 16:17:29,496 DEBUG    errbot.storage            Closed storage 'Health'
+2022-01-11 16:17:29,497 DEBUG    errbot.storage            Closed storage 'Utils'
+2022-01-11 16:17:29,497 DEBUG    errbot.storage            Closed storage 'Backup'
+2022-01-11 16:17:29,498 DEBUG    errbot.storage            Closed storage 'ChatRoom'
+2022-01-11 16:17:29,499 DEBUG    errbot.storage            Closed storage 'Example'
+2022-01-11 16:17:29,499 DEBUG    errbot.backends.text      Trigger shutdown
+2022-01-11 16:17:29,499 DEBUG    errbot.storage            Closed storage 'text_backend'
+2022-01-11 16:17:29,499 INFO     errbot.plugin_manager     Shutdown.
+2022-01-11 16:17:29,500 DEBUG    errbot.storage            Closed storage 'core'
+2022-01-11 16:17:29,500 INFO     errbot.plugin_manager     Bye.
+2022-01-11 16:17:29,500 DEBUG    errbot.storage            Closed storage 'repomgr'
+2022-01-11 16:17:29,500 INFO     errbot.cli                Process exiting
+2022-01-19 01:50:48,350 INFO     errbot.bootstrap          Found Storage plugin: Shelf.
+2022-01-19 01:50:48,354 INFO     errbot.bootstrap          Found Backend plugin: Telegram
+2022-01-19 01:50:48,354 DEBUG    errbot.storage            Opening storage 'repomgr'
+2022-01-19 01:50:48,354 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/repomgr.db
+2022-01-19 01:50:48,437 DEBUG    errbot.core               ErrBot init.
+2022-01-19 01:50:48,437 DEBUG    errbot.backends.base      Backend init.
+2022-01-19 01:50:48,442 DEBUG    errbot.core               created a thread pool of size 10.
+2022-01-19 01:50:48,447 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2022-01-19 01:50:48,448 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2022-01-19 01:50:48,448 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2022-01-19 01:50:48,449 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2022-01-19 01:50:48,450 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2022-01-19 01:50:48,450 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2022-01-19 01:50:48,451 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2022-01-19 01:50:48,451 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2022-01-19 01:50:48,451 DEBUG    MARKDOWN                  Successfully loaded extension "errbot.rendering.ansiext.AnsiExtension".
+2022-01-19 01:50:48,451 DEBUG    errbot.storage            Opening storage 'core'
+2022-01-19 01:50:48,452 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/core.db
+2022-01-19 01:50:48,452 DEBUG    errbot.core               Initializing backend storage
+2022-01-19 01:50:48,452 DEBUG    errbot.storage            Opening storage 'telegram_backend'
+2022-01-19 01:50:48,452 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/telegram_backend.db
+2022-01-19 01:50:48,458 DEBUG    errbot.plugin_manager     New entries added to sys.path:
+2022-01-19 01:50:48,458 DEBUG    errbot.plugin_manager     /home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins
+2022-01-19 01:50:48,458 DEBUG    errbot.plugin_manager     /home/dake/opera/errbot/plugins/err-example
+2022-01-19 01:50:48,560 INFO     errbot                    webhooks:  Flag to bind /echo to echo
+2022-01-19 01:50:48,561 DEBUG    errbot.plugins.Webserver  Logger for plugin initialized...
+2022-01-19 01:50:48,562 DEBUG    errbot.plugins.Plugins    Logger for plugin initialized...
+2022-01-19 01:50:48,563 DEBUG    errbot.plugins.ACLs       Logger for plugin initialized...
+2022-01-19 01:50:48,564 DEBUG    errbot.plugins.Help       Logger for plugin initialized...
+2022-01-19 01:50:48,593 DEBUG    errbot.plugins.VersionChecker Logger for plugin initialized...
+2022-01-19 01:50:48,594 DEBUG    errbot.plugins.TextCmds   Logger for plugin initialized...
+2022-01-19 01:50:48,596 DEBUG    errbot.plugins.Flows      Logger for plugin initialized...
+2022-01-19 01:50:48,597 DEBUG    errbot.plugins.CommandNotFoundFilter Logger for plugin initialized...
+2022-01-19 01:50:48,599 DEBUG    errbot.plugins.Health     Logger for plugin initialized...
+2022-01-19 01:50:48,600 DEBUG    errbot.plugins.Utils      Logger for plugin initialized...
+2022-01-19 01:50:48,600 DEBUG    errbot.plugins.Backup     Logger for plugin initialized...
+2022-01-19 01:50:48,601 DEBUG    errbot.plugins.ChatRoom   Logger for plugin initialized...
+2022-01-19 01:50:48,602 DEBUG    errbot.plugins.Example    Logger for plugin initialized...
+2022-01-19 01:50:48,603 DEBUG    errbot.bootstrap          Start serving commands from the telegram backend.
+2022-01-19 01:50:48,603 INFO     errbot.backends.telegram_messenger Initializing connection
+2022-01-19 01:50:52,092 INFO     errbot.backends.telegram_messenger Connected
+2022-01-19 01:50:52,092 INFO     errbot.core               Activate internal commands
+2022-01-19 01:50:52,093 INFO     errbot.plugin_manager     Activate bot plugins...
+2022-01-19 01:50:52,093 INFO     errbot.plugin_manager     Activate plugin: Webserver.
+2022-01-19 01:50:52,094 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:50:52,094 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2022-01-19 01:50:52,094 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2022-01-19 01:50:52,095 INFO     errbot.core_plugins.wsview Webhook routing echo
+2022-01-19 01:50:52,096 INFO     errbot.plugin_manager     Activate plugin: Plugins.
+2022-01-19 01:50:52,096 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:50:52,096 DEBUG    errbot.botplugin          Init storage for Plugins.
+2022-01-19 01:50:52,097 DEBUG    errbot.storage            Opening storage 'Plugins'
+2022-01-19 01:50:52,097 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Plugins.db
+2022-01-19 01:50:52,097 DEBUG    errbot.core               Adding command : plugin_activate -> plugin_activate.
+2022-01-19 01:50:52,097 DEBUG    errbot.core               Adding command : plugin_blacklist -> plugin_blacklist.
+2022-01-19 01:50:52,097 DEBUG    errbot.core               Adding command : plugin_config -> plugin_config.
+2022-01-19 01:50:52,098 DEBUG    errbot.core               Adding command : plugin_deactivate -> plugin_deactivate.
+2022-01-19 01:50:52,098 DEBUG    errbot.core               Adding command : plugin_info -> plugin_info.
+2022-01-19 01:50:52,098 DEBUG    errbot.core               Adding command : plugin_reload -> plugin_reload.
+2022-01-19 01:50:52,098 DEBUG    errbot.core               Adding command : plugin_unblacklist -> plugin_unblacklist.
+2022-01-19 01:50:52,098 DEBUG    errbot.core               Adding command : repos -> repos.
+2022-01-19 01:50:52,098 DEBUG    errbot.core               Adding command : repos_install -> repos_install.
+2022-01-19 01:50:52,099 DEBUG    errbot.core               Adding command : repos_search -> repos_search.
+2022-01-19 01:50:52,099 DEBUG    errbot.core               Adding command : repos_uninstall -> repos_uninstall.
+2022-01-19 01:50:52,099 DEBUG    errbot.core               Adding command : repos_update -> repos_update.
+2022-01-19 01:50:52,099 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2022-01-19 01:50:52,099 INFO     errbot.plugin_manager     Activate plugin: ACLs.
+2022-01-19 01:50:52,100 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:50:52,100 DEBUG    errbot.botplugin          Init storage for ACLs.
+2022-01-19 01:50:52,100 DEBUG    errbot.storage            Opening storage 'ACLs'
+2022-01-19 01:50:52,100 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/ACLs.db
+2022-01-19 01:50:52,100 DEBUG    errbot.core               Adding command filter: acls
+2022-01-19 01:50:52,101 INFO     errbot.core_plugins.wsview Checking ACLS for webhooks
+2022-01-19 01:50:52,101 INFO     errbot.plugin_manager     Activate plugin: Help.
+2022-01-19 01:50:52,101 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:50:52,101 DEBUG    errbot.botplugin          Init storage for Help.
+2022-01-19 01:50:52,102 DEBUG    errbot.storage            Opening storage 'Help'
+2022-01-19 01:50:52,102 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Help.db
+2022-01-19 01:50:52,102 DEBUG    errbot.core               Adding command : about -> about.
+2022-01-19 01:50:52,103 DEBUG    errbot.core               Adding command : apropos -> apropos.
+2022-01-19 01:50:52,103 DEBUG    errbot.core               Adding command : help -> help.
+2022-01-19 01:50:52,103 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2022-01-19 01:50:52,104 INFO     errbot.plugin_manager     Activate plugin: VersionChecker.
+2022-01-19 01:50:52,104 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:50:52,104 DEBUG    errbot.plugins.VersionChecker Checking version in background.
+2022-01-19 01:50:52,105 DEBUG    errbot.botplugin          Programming the polling of version_check every 86400 seconds with args [] and kwargs {}
+2022-01-19 01:50:52,106 DEBUG    urllib3.connectionpool    Starting new HTTPS connection (1): errbot.io:443
+2022-01-19 01:50:52,107 DEBUG    errbot.botplugin          Init storage for VersionChecker.
+2022-01-19 01:50:52,107 DEBUG    errbot.storage            Opening storage 'VersionChecker'
+2022-01-19 01:50:52,108 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/VersionChecker.db
+2022-01-19 01:50:52,115 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2022-01-19 01:50:52,115 INFO     errbot.plugin_manager     Activate plugin: TextCmds.
+2022-01-19 01:50:52,115 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:50:52,116 INFO     errbot.core_plugins.wsview Checking TextModeCmds for webhooks
+2022-01-19 01:50:52,116 INFO     errbot.plugin_manager     Activate plugin: Flows.
+2022-01-19 01:50:52,116 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:50:52,116 DEBUG    errbot.botplugin          Init storage for Flows.
+2022-01-19 01:50:52,117 DEBUG    errbot.storage            Opening storage 'Flows'
+2022-01-19 01:50:52,117 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Flows.db
+2022-01-19 01:50:52,117 DEBUG    errbot.core               Adding command : flows_kill -> flows_kill.
+2022-01-19 01:50:52,117 DEBUG    errbot.core               Adding command : flows_list -> flows_list.
+2022-01-19 01:50:52,118 DEBUG    errbot.core               Adding command : flows_show -> flows_show.
+2022-01-19 01:50:52,118 DEBUG    errbot.core               Adding command : flows_start -> flows_start.
+2022-01-19 01:50:52,118 DEBUG    errbot.core               Adding command : flows_status -> flows_status.
+2022-01-19 01:50:52,118 DEBUG    errbot.core               Adding command : flows_stop -> flows_stop.
+2022-01-19 01:50:52,118 INFO     errbot.core_plugins.wsview Checking Flows for webhooks
+2022-01-19 01:50:52,119 INFO     errbot.plugin_manager     Activate plugin: CommandNotFoundFilter.
+2022-01-19 01:50:52,119 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:50:52,119 DEBUG    errbot.botplugin          Init storage for CommandNotFoundFilter.
+2022-01-19 01:50:52,119 DEBUG    errbot.storage            Opening storage 'CommandNotFoundFilter'
+2022-01-19 01:50:52,119 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/CommandNotFoundFilter.db
+2022-01-19 01:50:52,120 DEBUG    errbot.core               Adding command filter: cnf_filter
+2022-01-19 01:50:52,120 INFO     errbot.core_plugins.wsview Checking CommandNotFoundFilter for webhooks
+2022-01-19 01:50:52,120 INFO     errbot.plugin_manager     Activate plugin: Health.
+2022-01-19 01:50:52,121 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:50:52,121 DEBUG    errbot.botplugin          Init storage for Health.
+2022-01-19 01:50:52,121 DEBUG    errbot.storage            Opening storage 'Health'
+2022-01-19 01:50:52,122 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Health.db
+2022-01-19 01:50:52,122 DEBUG    errbot.core               Adding command : restart -> restart.
+2022-01-19 01:50:52,122 DEBUG    errbot.core               Adding command : shutdown -> shutdown.
+2022-01-19 01:50:52,122 DEBUG    errbot.core               Adding command : status -> status.
+2022-01-19 01:50:52,122 DEBUG    errbot.core               Adding command : status_gc -> status_gc.
+2022-01-19 01:50:52,123 DEBUG    errbot.core               Adding command : status_load -> status_load.
+2022-01-19 01:50:52,123 DEBUG    errbot.core               Adding command : status_plugins -> status_plugins.
+2022-01-19 01:50:52,123 DEBUG    errbot.core               Adding command : uptime -> uptime.
+2022-01-19 01:50:52,123 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2022-01-19 01:50:52,124 INFO     errbot.plugin_manager     Activate plugin: Utils.
+2022-01-19 01:50:52,124 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:50:52,124 DEBUG    errbot.botplugin          Init storage for Utils.
+2022-01-19 01:50:52,125 DEBUG    errbot.storage            Opening storage 'Utils'
+2022-01-19 01:50:52,125 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Utils.db
+2022-01-19 01:50:52,126 DEBUG    errbot.core               Adding command : echo -> echo.
+2022-01-19 01:50:52,127 DEBUG    errbot.core               Adding command : history -> history.
+2022-01-19 01:50:52,127 DEBUG    errbot.core               Adding command : log_tail -> log_tail.
+2022-01-19 01:50:52,127 DEBUG    errbot.core               Adding command : render_test -> render_test.
+2022-01-19 01:50:52,127 DEBUG    errbot.core               Adding command : whoami -> whoami.
+2022-01-19 01:50:52,127 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2022-01-19 01:50:52,128 INFO     errbot.plugin_manager     Activate plugin: Backup.
+2022-01-19 01:50:52,128 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:50:52,128 DEBUG    errbot.botplugin          Init storage for Backup.
+2022-01-19 01:50:52,128 DEBUG    errbot.storage            Opening storage 'Backup'
+2022-01-19 01:50:52,128 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Backup.db
+2022-01-19 01:50:52,129 DEBUG    errbot.core               Adding command : backup -> backup.
+2022-01-19 01:50:52,129 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2022-01-19 01:50:52,130 INFO     errbot.plugin_manager     Activate plugin: ChatRoom.
+2022-01-19 01:50:52,130 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:50:52,130 DEBUG    errbot.botplugin          Init storage for ChatRoom.
+2022-01-19 01:50:52,130 DEBUG    errbot.storage            Opening storage 'ChatRoom'
+2022-01-19 01:50:52,130 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/ChatRoom.db
+2022-01-19 01:50:52,131 DEBUG    errbot.core               Adding command : room_create -> room_create.
+2022-01-19 01:50:52,131 DEBUG    errbot.core               Adding command : room_destroy -> room_destroy.
+2022-01-19 01:50:52,131 DEBUG    errbot.core               Adding command : room_invite -> room_invite.
+2022-01-19 01:50:52,131 DEBUG    errbot.core               Adding command : room_join -> room_join.
+2022-01-19 01:50:52,131 DEBUG    errbot.core               Adding command : room_leave -> room_leave.
+2022-01-19 01:50:52,131 DEBUG    errbot.core               Adding command : room_list -> room_list.
+2022-01-19 01:50:52,131 DEBUG    errbot.core               Adding command : room_occupants -> room_occupants.
+2022-01-19 01:50:52,132 DEBUG    errbot.core               Adding command : room_topic -> room_topic.
+2022-01-19 01:50:52,132 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2022-01-19 01:50:52,132 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2022-01-19 01:50:52,132 INFO     errbot.plugin_manager     Activate plugin: Example.
+2022-01-19 01:50:52,132 DEBUG    errbot.templating         No templates directory found for this plugin [Looking for /home/dake/opera/errbot/plugins/err-example/templates]
+2022-01-19 01:50:52,133 DEBUG    errbot.botplugin          Init storage for Example.
+2022-01-19 01:50:52,133 DEBUG    errbot.storage            Opening storage 'Example'
+2022-01-19 01:50:52,133 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Example.db
+2022-01-19 01:50:52,133 DEBUG    errbot.core               Adding command : tryme -> tryme.
+2022-01-19 01:50:52,134 INFO     errbot.core_plugins.wsview Checking Example for webhooks
+2022-01-19 01:50:52,134 DEBUG    errbot.plugin_manager     Activate flow plugins ...
+2022-01-19 01:50:52,134 INFO     errbot.core               Notifying connection to all the plugins...
+2022-01-19 01:50:52,134 DEBUG    errbot.core               Trigger callback_connect on Plugins.
+2022-01-19 01:50:52,134 DEBUG    errbot.core               Trigger callback_connect on ACLS.
+2022-01-19 01:50:52,134 DEBUG    errbot.core               Trigger callback_connect on Help.
+2022-01-19 01:50:52,135 DEBUG    errbot.core               Trigger callback_connect on VersionChecker.
+2022-01-19 01:50:52,135 DEBUG    errbot.core               Trigger callback_connect on Flows.
+2022-01-19 01:50:52,135 DEBUG    errbot.core               Trigger callback_connect on CommandNotFoundFilter.
+2022-01-19 01:50:52,135 DEBUG    errbot.core               Trigger callback_connect on Health.
+2022-01-19 01:50:52,135 DEBUG    errbot.core               Trigger callback_connect on Utils.
+2022-01-19 01:50:52,135 DEBUG    errbot.core               Trigger callback_connect on Backup.
+2022-01-19 01:50:52,136 DEBUG    errbot.core               Trigger callback_connect on ChatRoom.
+2022-01-19 01:50:52,136 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2022-01-19 01:50:52,136 DEBUG    errbot.core               Trigger callback_connect on Example.
+2022-01-19 01:50:52,136 INFO     errbot.core               Plugin activation done.
+2022-01-19 01:50:52,137 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 0
+2022-01-19 01:50:52,566 DEBUG    urllib3.connectionpool    https://errbot.io:443 "GET /versions.json HTTP/1.1" 302 240
+2022-01-19 01:50:52,568 DEBUG    urllib3.connectionpool    Starting new HTTPS connection (1): errbot.readthedocs.io:443
+2022-01-19 01:50:53,335 DEBUG    urllib3.connectionpool    https://errbot.readthedocs.io:443 "GET /versions.json HTTP/1.1" 302 0
+2022-01-19 01:50:53,965 DEBUG    urllib3.connectionpool    https://errbot.readthedocs.io:443 "GET /en/latest/versions.json HTTP/1.1" 200 47
+2022-01-19 01:50:53,968 DEBUG    errbot.plugins.VersionChecker Latest Errbot version is: 6.1.8
+2022-01-19 01:50:53,968 DEBUG    errbot.plugins.VersionChecker Installed Errbot version is: 6.1.8
+2022-01-19 01:51:10,809 DEBUG    errbot.backends.telegram_messenger Processing update: {'update_id': 216189339, 'message': {'photo': [], 'new_chat_members': [], 'channel_chat_created': False, 'message_id': 1, 'text': '/start', 'chat': {'id': 208907614, 'first_name': 'Дияр', 'type': 'private', 'username': 'dake016'}, 'supergroup_chat_created': False, 'group_chat_created': False, 'new_chat_photo': [], 'caption_entities': [], 'date': 1642535470, 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'delete_chat_photo': False, 'from': {'is_bot': False, 'id': 208907614, 'language_code': 'ru', 'first_name': 'Дияр', 'username': 'dake016'}}}
+2022-01-19 01:51:10,810 DEBUG    errbot.core               *** frm = 208907614
+2022-01-19 01:51:10,811 DEBUG    errbot.core               *** username = 208907614
+2022-01-19 01:51:10,812 DEBUG    errbot.core               *** text = /start
+2022-01-19 01:51:10,812 DEBUG    errbot.core               Triggering callback_message on Plugins.
+2022-01-19 01:51:10,812 DEBUG    errbot.core               Triggering callback_message on ACLs.
+2022-01-19 01:51:10,812 DEBUG    errbot.core               Triggering callback_message on Help.
+2022-01-19 01:51:10,812 DEBUG    errbot.core               Triggering callback_message on VersionChecker.
+2022-01-19 01:51:10,813 DEBUG    errbot.core               Triggering callback_message on Flows.
+2022-01-19 01:51:10,813 DEBUG    errbot.core               Triggering callback_message on CommandNotFoundFilter.
+2022-01-19 01:51:10,813 DEBUG    errbot.core               Triggering callback_message on Health.
+2022-01-19 01:51:10,813 DEBUG    errbot.core               Triggering callback_message on Utils.
+2022-01-19 01:51:10,813 DEBUG    errbot.core               Triggering callback_message on Backup.
+2022-01-19 01:51:10,813 DEBUG    errbot.core               Triggering callback_message on ChatRoom.
+2022-01-19 01:51:10,814 DEBUG    errbot.core               Triggering callback_message on Example.
+2022-01-19 01:51:10,814 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189340
+2022-01-19 01:51:10,814 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189340
+2022-01-19 01:51:28,768 DEBUG    errbot.backends.telegram_messenger Processing update: {'update_id': 216189340, 'message': {'photo': [], 'new_chat_members': [], 'channel_chat_created': False, 'message_id': 2, 'text': '!help', 'chat': {'id': 208907614, 'first_name': 'Дияр', 'type': 'private', 'username': 'dake016'}, 'supergroup_chat_created': False, 'group_chat_created': False, 'new_chat_photo': [], 'caption_entities': [], 'date': 1642535488, 'entities': [], 'delete_chat_photo': False, 'from': {'is_bot': False, 'id': 208907614, 'language_code': 'ru', 'first_name': 'Дияр', 'username': 'dake016'}}}
+2022-01-19 01:51:28,769 DEBUG    errbot.core               *** frm = 208907614
+2022-01-19 01:51:28,769 DEBUG    errbot.core               *** username = 208907614
+2022-01-19 01:51:28,769 DEBUG    errbot.core               *** text = !help
+2022-01-19 01:51:28,770 DEBUG    errbot.plugins.ACLs       Check help for ACLs.
+2022-01-19 01:51:28,770 INFO     errbot.plugins.ACLs       Matching ACL {} against username 208907614 for command Help:help.
+2022-01-19 01:51:28,770 DEBUG    errbot.plugins.ACLs       Check if help is admin only command.
+2022-01-19 01:51:28,770 INFO     errbot.core               Processing command "help" with parameters "" from 208907614
+2022-01-19 01:51:28,771 DEBUG    errbot.core               Triggering callback_message on Plugins.
+2022-01-19 01:51:28,771 DEBUG    errbot.flow               Test if the command help is a trigger for an inflight flow ...
+2022-01-19 01:51:28,772 DEBUG    errbot.core               Triggering callback_message on ACLs.
+2022-01-19 01:51:28,772 DEBUG    errbot.flow               None matched.
+2022-01-19 01:51:28,772 DEBUG    errbot.core               Triggering callback_message on Help.
+2022-01-19 01:51:28,776 DEBUG    errbot.core               Triggering callback_message on VersionChecker.
+2022-01-19 01:51:28,777 DEBUG    errbot.core               Triggering callback_message on Flows.
+2022-01-19 01:51:28,777 DEBUG    errbot.core               Triggering callback_message on CommandNotFoundFilter.
+2022-01-19 01:51:28,777 DEBUG    errbot.core               Triggering callback_message on Health.
+2022-01-19 01:51:28,778 DEBUG    errbot.core               Triggering callback_message on Utils.
+2022-01-19 01:51:28,778 DEBUG    errbot.core               Triggering callback_message on Backup.
+2022-01-19 01:51:28,778 DEBUG    errbot.core               Triggering callback_message on ChatRoom.
+2022-01-19 01:51:28,779 DEBUG    errbot.core               Triggering callback_message on Example.
+2022-01-19 01:51:28,779 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189341
+2022-01-19 01:51:28,780 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189341
+2022-01-19 01:51:29,384 DEBUG    errbot.flow               Test if the command help is a trigger for an inflight flow ...
+2022-01-19 01:51:29,385 DEBUG    errbot.flow               None matched.
+2022-01-19 01:51:29,385 DEBUG    errbot.flow               Test if the command help is an auto-trigger for any flow ...
+2022-01-19 01:51:54,808 WARNING  telegram.vendor.ptb_urllib3.urllib3.connectionpool Connection pool is full, discarding connection: api.telegram.org
+2022-01-19 01:51:54,809 DEBUG    errbot.backends.telegram_messenger Processing update: {'update_id': 216189341, 'message': {'photo': [], 'new_chat_members': [], 'channel_chat_created': False, 'message_id': 7, 'text': '!whoami', 'chat': {'id': 208907614, 'first_name': 'Дияр', 'type': 'private', 'username': 'dake016'}, 'supergroup_chat_created': False, 'group_chat_created': False, 'new_chat_photo': [], 'caption_entities': [], 'date': 1642535514, 'entities': [], 'delete_chat_photo': False, 'from': {'is_bot': False, 'id': 208907614, 'language_code': 'ru', 'first_name': 'Дияр', 'username': 'dake016'}}}
+2022-01-19 01:51:54,810 DEBUG    errbot.core               *** frm = 208907614
+2022-01-19 01:51:54,810 DEBUG    errbot.core               *** username = 208907614
+2022-01-19 01:51:54,810 DEBUG    errbot.core               *** text = !whoami
+2022-01-19 01:51:54,810 DEBUG    errbot.plugins.ACLs       Check whoami for ACLs.
+2022-01-19 01:51:54,811 INFO     errbot.plugins.ACLs       Matching ACL {} against username 208907614 for command Utils:whoami.
+2022-01-19 01:51:54,811 DEBUG    errbot.plugins.ACLs       Check if whoami is admin only command.
+2022-01-19 01:51:54,811 INFO     errbot.core               Processing command "whoami" with parameters "" from 208907614
+2022-01-19 01:51:54,811 DEBUG    errbot.core               Triggering callback_message on Plugins.
+2022-01-19 01:51:54,812 DEBUG    errbot.flow               Test if the command whoami is a trigger for an inflight flow ...
+2022-01-19 01:51:54,812 DEBUG    errbot.core               Triggering callback_message on ACLs.
+2022-01-19 01:51:54,812 DEBUG    errbot.flow               None matched.
+2022-01-19 01:51:54,813 DEBUG    errbot.core               Triggering callback_message on Help.
+2022-01-19 01:51:54,816 DEBUG    errbot.core               Triggering callback_message on VersionChecker.
+2022-01-19 01:51:54,817 DEBUG    errbot.core               Triggering callback_message on Flows.
+2022-01-19 01:51:54,818 DEBUG    errbot.core               Triggering callback_message on CommandNotFoundFilter.
+2022-01-19 01:51:54,818 DEBUG    errbot.core               Triggering callback_message on Health.
+2022-01-19 01:51:54,818 DEBUG    errbot.core               Triggering callback_message on Utils.
+2022-01-19 01:51:54,818 DEBUG    errbot.core               Triggering callback_message on Backup.
+2022-01-19 01:51:54,818 DEBUG    errbot.core               Triggering callback_message on ChatRoom.
+2022-01-19 01:51:54,819 DEBUG    errbot.core               Triggering callback_message on Example.
+2022-01-19 01:51:54,819 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189342
+2022-01-19 01:51:54,819 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189342
+2022-01-19 01:51:54,958 DEBUG    errbot.flow               Test if the command whoami is a trigger for an inflight flow ...
+2022-01-19 01:51:54,958 DEBUG    errbot.flow               None matched.
+2022-01-19 01:51:54,959 DEBUG    errbot.flow               Test if the command whoami is an auto-trigger for any flow ...
+2022-01-19 01:52:39,799 WARNING  telegram.vendor.ptb_urllib3.urllib3.connectionpool Connection pool is full, discarding connection: api.telegram.org
+2022-01-19 01:52:39,800 DEBUG    errbot.backends.telegram_messenger Processing update: {'update_id': 216189342, 'message': {'photo': [], 'new_chat_members': [], 'channel_chat_created': False, 'message_id': 9, 'text': '!tryme', 'chat': {'id': 208907614, 'first_name': 'Дияр', 'type': 'private', 'username': 'dake016'}, 'supergroup_chat_created': False, 'group_chat_created': False, 'new_chat_photo': [], 'caption_entities': [], 'date': 1642535559, 'entities': [], 'delete_chat_photo': False, 'from': {'is_bot': False, 'id': 208907614, 'language_code': 'ru', 'first_name': 'Дияр', 'username': 'dake016'}}}
+2022-01-19 01:52:39,801 DEBUG    errbot.core               *** frm = 208907614
+2022-01-19 01:52:39,801 DEBUG    errbot.core               *** username = 208907614
+2022-01-19 01:52:39,801 DEBUG    errbot.core               *** text = !tryme
+2022-01-19 01:52:39,802 DEBUG    errbot.plugins.ACLs       Check tryme for ACLs.
+2022-01-19 01:52:39,802 INFO     errbot.plugins.ACLs       Matching ACL {} against username 208907614 for command Example:tryme.
+2022-01-19 01:52:39,802 DEBUG    errbot.plugins.ACLs       Check if tryme is admin only command.
+2022-01-19 01:52:39,803 INFO     errbot.core               Processing command "tryme" with parameters "" from 208907614
+2022-01-19 01:52:39,803 DEBUG    errbot.core               Triggering callback_message on Plugins.
+2022-01-19 01:52:39,803 DEBUG    errbot.flow               Test if the command tryme is a trigger for an inflight flow ...
+2022-01-19 01:52:39,804 DEBUG    errbot.core               Triggering callback_message on ACLs.
+2022-01-19 01:52:39,804 DEBUG    errbot.flow               None matched.
+2022-01-19 01:52:39,804 DEBUG    errbot.core               Triggering callback_message on Help.
+2022-01-19 01:52:39,805 DEBUG    errbot.core               Triggering callback_message on VersionChecker.
+2022-01-19 01:52:39,806 DEBUG    errbot.core               Triggering callback_message on Flows.
+2022-01-19 01:52:39,806 DEBUG    errbot.core               Triggering callback_message on CommandNotFoundFilter.
+2022-01-19 01:52:39,806 DEBUG    errbot.core               Triggering callback_message on Health.
+2022-01-19 01:52:39,806 DEBUG    errbot.core               Triggering callback_message on Utils.
+2022-01-19 01:52:39,806 DEBUG    errbot.core               Triggering callback_message on Backup.
+2022-01-19 01:52:39,806 DEBUG    errbot.core               Triggering callback_message on ChatRoom.
+2022-01-19 01:52:39,807 DEBUG    errbot.core               Triggering callback_message on Example.
+2022-01-19 01:52:39,807 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189343
+2022-01-19 01:52:39,807 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189343
+2022-01-19 01:52:39,978 DEBUG    errbot.flow               Test if the command tryme is a trigger for an inflight flow ...
+2022-01-19 01:52:39,978 DEBUG    errbot.flow               None matched.
+2022-01-19 01:52:39,979 DEBUG    errbot.flow               Test if the command tryme is an auto-trigger for any flow ...
+2022-01-19 01:53:30,112 WARNING  telegram.vendor.ptb_urllib3.urllib3.connectionpool Connection pool is full, discarding connection: api.telegram.org
+2022-01-19 01:53:30,114 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189343
+2022-01-19 01:53:30,114 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189343
+2022-01-19 01:54:17,188 INFO     errbot.backends.telegram_messenger Interrupt received, shutting down..
+2022-01-19 01:54:17,189 DEBUG    errbot.backends.telegram_messenger Triggering disconnect callback
+2022-01-19 01:54:17,189 INFO     errbot.core               Disconnect callback, deactivating all the plugins.
+2022-01-19 01:54:17,192 DEBUG    errbot.storage            Closed storage 'Plugins'
+2022-01-19 01:54:17,193 DEBUG    errbot.storage            Closed storage 'ACLs'
+2022-01-19 01:54:17,193 DEBUG    errbot.core               Removing command filter: acls
+2022-01-19 01:54:17,194 DEBUG    errbot.storage            Closed storage 'Help'
+2022-01-19 01:54:17,195 DEBUG    errbot.botplugin          You still have active pollers at deactivation stage, I cleaned them up for you.
+2022-01-19 01:54:17,195 DEBUG    errbot.storage            Closed storage 'VersionChecker'
+2022-01-19 01:54:17,197 DEBUG    errbot.storage            Closed storage 'Flows'
+2022-01-19 01:54:17,197 DEBUG    errbot.storage            Closed storage 'CommandNotFoundFilter'
+2022-01-19 01:54:17,198 DEBUG    errbot.core               Removing command filter: cnf_filter
+2022-01-19 01:54:17,198 DEBUG    errbot.storage            Closed storage 'Health'
+2022-01-19 01:54:17,200 DEBUG    errbot.storage            Closed storage 'Utils'
+2022-01-19 01:54:17,200 DEBUG    errbot.storage            Closed storage 'Backup'
+2022-01-19 01:54:17,201 DEBUG    errbot.storage            Closed storage 'ChatRoom'
+2022-01-19 01:54:17,202 DEBUG    errbot.storage            Closed storage 'Example'
+2022-01-19 01:54:17,203 INFO     errbot.backends.base      Trigger shutdown
+2022-01-19 01:54:17,203 DEBUG    errbot.storage            Closed storage 'telegram_backend'
+2022-01-19 01:54:17,203 INFO     errbot.plugin_manager     Shutdown.
+2022-01-19 01:54:17,204 DEBUG    errbot.storage            Closed storage 'core'
+2022-01-19 01:54:17,204 INFO     errbot.plugin_manager     Bye.
+2022-01-19 01:54:17,205 DEBUG    errbot.storage            Closed storage 'repomgr'
+2022-01-19 01:54:17,205 INFO     errbot.cli                Process exiting
+2022-01-19 01:54:18,851 INFO     errbot.bootstrap          Found Storage plugin: Shelf.
+2022-01-19 01:54:18,854 INFO     errbot.bootstrap          Found Backend plugin: Telegram
+2022-01-19 01:54:18,854 DEBUG    errbot.storage            Opening storage 'repomgr'
+2022-01-19 01:54:18,854 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/repomgr.db
+2022-01-19 01:54:18,938 DEBUG    errbot.core               ErrBot init.
+2022-01-19 01:54:18,939 DEBUG    errbot.backends.base      Backend init.
+2022-01-19 01:54:18,943 DEBUG    errbot.core               created a thread pool of size 10.
+2022-01-19 01:54:18,947 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2022-01-19 01:54:18,948 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2022-01-19 01:54:18,949 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2022-01-19 01:54:18,949 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2022-01-19 01:54:18,950 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2022-01-19 01:54:18,951 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2022-01-19 01:54:18,951 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2022-01-19 01:54:18,952 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2022-01-19 01:54:18,952 DEBUG    MARKDOWN                  Successfully loaded extension "errbot.rendering.ansiext.AnsiExtension".
+2022-01-19 01:54:18,952 DEBUG    errbot.storage            Opening storage 'core'
+2022-01-19 01:54:18,952 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/core.db
+2022-01-19 01:54:18,953 DEBUG    errbot.core               Initializing backend storage
+2022-01-19 01:54:18,953 DEBUG    errbot.storage            Opening storage 'telegram_backend'
+2022-01-19 01:54:18,953 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/telegram_backend.db
+2022-01-19 01:54:18,955 DEBUG    errbot.plugin_manager     New entries added to sys.path:
+2022-01-19 01:54:18,955 DEBUG    errbot.plugin_manager     /home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins
+2022-01-19 01:54:18,955 DEBUG    errbot.plugin_manager     /home/dake/opera/errbot/plugins/err-example
+2022-01-19 01:54:19,051 INFO     errbot                    webhooks:  Flag to bind /echo to echo
+2022-01-19 01:54:19,052 DEBUG    errbot.plugins.Webserver  Logger for plugin initialized...
+2022-01-19 01:54:19,053 DEBUG    errbot.plugins.Plugins    Logger for plugin initialized...
+2022-01-19 01:54:19,053 DEBUG    errbot.plugins.ACLs       Logger for plugin initialized...
+2022-01-19 01:54:19,054 DEBUG    errbot.plugins.Help       Logger for plugin initialized...
+2022-01-19 01:54:19,081 DEBUG    errbot.plugins.VersionChecker Logger for plugin initialized...
+2022-01-19 01:54:19,082 DEBUG    errbot.plugins.TextCmds   Logger for plugin initialized...
+2022-01-19 01:54:19,084 DEBUG    errbot.plugins.Flows      Logger for plugin initialized...
+2022-01-19 01:54:19,085 DEBUG    errbot.plugins.CommandNotFoundFilter Logger for plugin initialized...
+2022-01-19 01:54:19,087 DEBUG    errbot.plugins.Health     Logger for plugin initialized...
+2022-01-19 01:54:19,087 DEBUG    errbot.plugins.Utils      Logger for plugin initialized...
+2022-01-19 01:54:19,088 DEBUG    errbot.plugins.Backup     Logger for plugin initialized...
+2022-01-19 01:54:19,089 DEBUG    errbot.plugins.ChatRoom   Logger for plugin initialized...
+2022-01-19 01:54:19,090 DEBUG    errbot.plugins.Example    Logger for plugin initialized...
+2022-01-19 01:54:19,090 DEBUG    errbot.bootstrap          Start serving commands from the telegram backend.
+2022-01-19 01:54:19,090 INFO     errbot.backends.telegram_messenger Initializing connection
+2022-01-19 01:54:19,398 INFO     errbot.backends.telegram_messenger Connected
+2022-01-19 01:54:19,398 INFO     errbot.core               Activate internal commands
+2022-01-19 01:54:19,398 INFO     errbot.plugin_manager     Activate bot plugins...
+2022-01-19 01:54:19,399 INFO     errbot.plugin_manager     Activate plugin: Webserver.
+2022-01-19 01:54:19,399 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:19,400 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2022-01-19 01:54:19,400 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2022-01-19 01:54:19,400 INFO     errbot.core_plugins.wsview Webhook routing echo
+2022-01-19 01:54:19,401 INFO     errbot.plugin_manager     Activate plugin: Plugins.
+2022-01-19 01:54:19,401 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:19,402 DEBUG    errbot.botplugin          Init storage for Plugins.
+2022-01-19 01:54:19,402 DEBUG    errbot.storage            Opening storage 'Plugins'
+2022-01-19 01:54:19,402 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Plugins.db
+2022-01-19 01:54:19,403 DEBUG    errbot.core               Adding command : plugin_activate -> plugin_activate.
+2022-01-19 01:54:19,403 DEBUG    errbot.core               Adding command : plugin_blacklist -> plugin_blacklist.
+2022-01-19 01:54:19,403 DEBUG    errbot.core               Adding command : plugin_config -> plugin_config.
+2022-01-19 01:54:19,403 DEBUG    errbot.core               Adding command : plugin_deactivate -> plugin_deactivate.
+2022-01-19 01:54:19,403 DEBUG    errbot.core               Adding command : plugin_info -> plugin_info.
+2022-01-19 01:54:19,403 DEBUG    errbot.core               Adding command : plugin_reload -> plugin_reload.
+2022-01-19 01:54:19,403 DEBUG    errbot.core               Adding command : plugin_unblacklist -> plugin_unblacklist.
+2022-01-19 01:54:19,404 DEBUG    errbot.core               Adding command : repos -> repos.
+2022-01-19 01:54:19,404 DEBUG    errbot.core               Adding command : repos_install -> repos_install.
+2022-01-19 01:54:19,404 DEBUG    errbot.core               Adding command : repos_search -> repos_search.
+2022-01-19 01:54:19,404 DEBUG    errbot.core               Adding command : repos_uninstall -> repos_uninstall.
+2022-01-19 01:54:19,404 DEBUG    errbot.core               Adding command : repos_update -> repos_update.
+2022-01-19 01:54:19,404 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2022-01-19 01:54:19,405 INFO     errbot.plugin_manager     Activate plugin: ACLs.
+2022-01-19 01:54:19,405 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:19,405 DEBUG    errbot.botplugin          Init storage for ACLs.
+2022-01-19 01:54:19,406 DEBUG    errbot.storage            Opening storage 'ACLs'
+2022-01-19 01:54:19,406 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/ACLs.db
+2022-01-19 01:54:19,406 DEBUG    errbot.core               Adding command filter: acls
+2022-01-19 01:54:19,406 INFO     errbot.core_plugins.wsview Checking ACLS for webhooks
+2022-01-19 01:54:19,407 INFO     errbot.plugin_manager     Activate plugin: Help.
+2022-01-19 01:54:19,407 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:19,407 DEBUG    errbot.botplugin          Init storage for Help.
+2022-01-19 01:54:19,407 DEBUG    errbot.storage            Opening storage 'Help'
+2022-01-19 01:54:19,407 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Help.db
+2022-01-19 01:54:19,408 DEBUG    errbot.core               Adding command : about -> about.
+2022-01-19 01:54:19,408 DEBUG    errbot.core               Adding command : apropos -> apropos.
+2022-01-19 01:54:19,408 DEBUG    errbot.core               Adding command : help -> help.
+2022-01-19 01:54:19,408 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2022-01-19 01:54:19,409 INFO     errbot.plugin_manager     Activate plugin: VersionChecker.
+2022-01-19 01:54:19,409 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:19,409 DEBUG    errbot.plugins.VersionChecker Checking version in background.
+2022-01-19 01:54:19,410 DEBUG    errbot.botplugin          Programming the polling of version_check every 86400 seconds with args [] and kwargs {}
+2022-01-19 01:54:19,411 DEBUG    urllib3.connectionpool    Starting new HTTPS connection (1): errbot.io:443
+2022-01-19 01:54:19,412 DEBUG    errbot.botplugin          Init storage for VersionChecker.
+2022-01-19 01:54:19,412 DEBUG    errbot.storage            Opening storage 'VersionChecker'
+2022-01-19 01:54:19,412 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/VersionChecker.db
+2022-01-19 01:54:19,413 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2022-01-19 01:54:19,413 INFO     errbot.plugin_manager     Activate plugin: TextCmds.
+2022-01-19 01:54:19,413 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:19,414 INFO     errbot.core_plugins.wsview Checking TextModeCmds for webhooks
+2022-01-19 01:54:19,414 INFO     errbot.plugin_manager     Activate plugin: Flows.
+2022-01-19 01:54:19,414 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:19,414 DEBUG    errbot.botplugin          Init storage for Flows.
+2022-01-19 01:54:19,415 DEBUG    errbot.storage            Opening storage 'Flows'
+2022-01-19 01:54:19,415 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Flows.db
+2022-01-19 01:54:19,415 DEBUG    errbot.core               Adding command : flows_kill -> flows_kill.
+2022-01-19 01:54:19,415 DEBUG    errbot.core               Adding command : flows_list -> flows_list.
+2022-01-19 01:54:19,416 DEBUG    errbot.core               Adding command : flows_show -> flows_show.
+2022-01-19 01:54:19,416 DEBUG    errbot.core               Adding command : flows_start -> flows_start.
+2022-01-19 01:54:19,416 DEBUG    errbot.core               Adding command : flows_status -> flows_status.
+2022-01-19 01:54:19,416 DEBUG    errbot.core               Adding command : flows_stop -> flows_stop.
+2022-01-19 01:54:19,416 INFO     errbot.core_plugins.wsview Checking Flows for webhooks
+2022-01-19 01:54:19,417 INFO     errbot.plugin_manager     Activate plugin: CommandNotFoundFilter.
+2022-01-19 01:54:19,417 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:19,417 DEBUG    errbot.botplugin          Init storage for CommandNotFoundFilter.
+2022-01-19 01:54:19,417 DEBUG    errbot.storage            Opening storage 'CommandNotFoundFilter'
+2022-01-19 01:54:19,417 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/CommandNotFoundFilter.db
+2022-01-19 01:54:19,418 DEBUG    errbot.core               Adding command filter: cnf_filter
+2022-01-19 01:54:19,418 INFO     errbot.core_plugins.wsview Checking CommandNotFoundFilter for webhooks
+2022-01-19 01:54:19,418 INFO     errbot.plugin_manager     Activate plugin: Health.
+2022-01-19 01:54:19,419 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:19,419 DEBUG    errbot.botplugin          Init storage for Health.
+2022-01-19 01:54:19,419 DEBUG    errbot.storage            Opening storage 'Health'
+2022-01-19 01:54:19,419 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Health.db
+2022-01-19 01:54:19,419 DEBUG    errbot.core               Adding command : restart -> restart.
+2022-01-19 01:54:19,420 DEBUG    errbot.core               Adding command : shutdown -> shutdown.
+2022-01-19 01:54:19,420 DEBUG    errbot.core               Adding command : status -> status.
+2022-01-19 01:54:19,420 DEBUG    errbot.core               Adding command : status_gc -> status_gc.
+2022-01-19 01:54:19,420 DEBUG    errbot.core               Adding command : status_load -> status_load.
+2022-01-19 01:54:19,420 DEBUG    errbot.core               Adding command : status_plugins -> status_plugins.
+2022-01-19 01:54:19,420 DEBUG    errbot.core               Adding command : uptime -> uptime.
+2022-01-19 01:54:19,421 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2022-01-19 01:54:19,421 INFO     errbot.plugin_manager     Activate plugin: Utils.
+2022-01-19 01:54:19,421 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:19,421 DEBUG    errbot.botplugin          Init storage for Utils.
+2022-01-19 01:54:19,422 DEBUG    errbot.storage            Opening storage 'Utils'
+2022-01-19 01:54:19,422 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Utils.db
+2022-01-19 01:54:19,422 DEBUG    errbot.core               Adding command : echo -> echo.
+2022-01-19 01:54:19,423 DEBUG    errbot.core               Adding command : history -> history.
+2022-01-19 01:54:19,423 DEBUG    errbot.core               Adding command : log_tail -> log_tail.
+2022-01-19 01:54:19,423 DEBUG    errbot.core               Adding command : render_test -> render_test.
+2022-01-19 01:54:19,424 DEBUG    errbot.core               Adding command : whoami -> whoami.
+2022-01-19 01:54:19,424 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2022-01-19 01:54:19,424 INFO     errbot.plugin_manager     Activate plugin: Backup.
+2022-01-19 01:54:19,425 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:19,425 DEBUG    errbot.botplugin          Init storage for Backup.
+2022-01-19 01:54:19,425 DEBUG    errbot.storage            Opening storage 'Backup'
+2022-01-19 01:54:19,425 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Backup.db
+2022-01-19 01:54:19,426 DEBUG    errbot.core               Adding command : backup -> backup.
+2022-01-19 01:54:19,426 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2022-01-19 01:54:19,426 INFO     errbot.plugin_manager     Activate plugin: ChatRoom.
+2022-01-19 01:54:19,427 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:19,427 DEBUG    errbot.botplugin          Init storage for ChatRoom.
+2022-01-19 01:54:19,427 DEBUG    errbot.storage            Opening storage 'ChatRoom'
+2022-01-19 01:54:19,427 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/ChatRoom.db
+2022-01-19 01:54:19,428 DEBUG    errbot.core               Adding command : room_create -> room_create.
+2022-01-19 01:54:19,428 DEBUG    errbot.core               Adding command : room_destroy -> room_destroy.
+2022-01-19 01:54:19,428 DEBUG    errbot.core               Adding command : room_invite -> room_invite.
+2022-01-19 01:54:19,428 DEBUG    errbot.core               Adding command : room_join -> room_join.
+2022-01-19 01:54:19,428 DEBUG    errbot.core               Adding command : room_leave -> room_leave.
+2022-01-19 01:54:19,429 DEBUG    errbot.core               Adding command : room_list -> room_list.
+2022-01-19 01:54:19,429 DEBUG    errbot.core               Adding command : room_occupants -> room_occupants.
+2022-01-19 01:54:19,429 DEBUG    errbot.core               Adding command : room_topic -> room_topic.
+2022-01-19 01:54:19,430 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2022-01-19 01:54:19,430 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2022-01-19 01:54:19,430 INFO     errbot.plugin_manager     Activate plugin: Example.
+2022-01-19 01:54:19,431 DEBUG    errbot.templating         No templates directory found for this plugin [Looking for /home/dake/opera/errbot/plugins/err-example/templates]
+2022-01-19 01:54:19,431 DEBUG    errbot.botplugin          Init storage for Example.
+2022-01-19 01:54:19,431 DEBUG    errbot.storage            Opening storage 'Example'
+2022-01-19 01:54:19,431 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Example.db
+2022-01-19 01:54:19,432 DEBUG    errbot.core               Adding command : tryme -> tryme.
+2022-01-19 01:54:19,433 INFO     errbot.core_plugins.wsview Checking Example for webhooks
+2022-01-19 01:54:19,433 DEBUG    errbot.plugin_manager     Activate flow plugins ...
+2022-01-19 01:54:19,434 INFO     errbot.core               Notifying connection to all the plugins...
+2022-01-19 01:54:19,434 DEBUG    errbot.core               Trigger callback_connect on Plugins.
+2022-01-19 01:54:19,434 DEBUG    errbot.core               Trigger callback_connect on ACLS.
+2022-01-19 01:54:19,435 DEBUG    errbot.core               Trigger callback_connect on Help.
+2022-01-19 01:54:19,435 DEBUG    errbot.core               Trigger callback_connect on VersionChecker.
+2022-01-19 01:54:19,435 DEBUG    errbot.core               Trigger callback_connect on Flows.
+2022-01-19 01:54:19,435 DEBUG    errbot.core               Trigger callback_connect on CommandNotFoundFilter.
+2022-01-19 01:54:19,435 DEBUG    errbot.core               Trigger callback_connect on Health.
+2022-01-19 01:54:19,435 DEBUG    errbot.core               Trigger callback_connect on Utils.
+2022-01-19 01:54:19,436 DEBUG    errbot.core               Trigger callback_connect on Backup.
+2022-01-19 01:54:19,436 DEBUG    errbot.core               Trigger callback_connect on ChatRoom.
+2022-01-19 01:54:19,436 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2022-01-19 01:54:19,436 DEBUG    errbot.core               Trigger callback_connect on Example.
+2022-01-19 01:54:19,436 INFO     errbot.core               Plugin activation done.
+2022-01-19 01:54:19,437 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189343
+2022-01-19 01:54:19,620 DEBUG    urllib3.connectionpool    https://errbot.io:443 "GET /versions.json HTTP/1.1" 302 240
+2022-01-19 01:54:19,622 DEBUG    urllib3.connectionpool    Starting new HTTPS connection (1): errbot.readthedocs.io:443
+2022-01-19 01:54:19,720 DEBUG    urllib3.connectionpool    https://errbot.readthedocs.io:443 "GET /versions.json HTTP/1.1" 302 0
+2022-01-19 01:54:19,753 DEBUG    urllib3.connectionpool    https://errbot.readthedocs.io:443 "GET /en/latest/versions.json HTTP/1.1" 200 47
+2022-01-19 01:54:19,755 DEBUG    errbot.plugins.VersionChecker Latest Errbot version is: 6.1.8
+2022-01-19 01:54:19,756 DEBUG    errbot.plugins.VersionChecker Installed Errbot version is: 6.1.8
+2022-01-19 01:54:26,151 DEBUG    errbot.backends.telegram_messenger Processing update: {'message': {'new_chat_members': [], 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 5}], 'channel_chat_created': False, 'date': 1642535666, 'message_id': 11, 'photo': [], 'supergroup_chat_created': False, 'chat': {'first_name': 'Дияр', 'username': 'dake016', 'type': 'private', 'id': 208907614}, 'delete_chat_photo': False, 'new_chat_photo': [], 'text': '/help', 'caption_entities': [], 'group_chat_created': False, 'from': {'first_name': 'Дияр', 'username': 'dake016', 'is_bot': False, 'language_code': 'ru', 'id': 208907614}}, 'update_id': 216189343}
+2022-01-19 01:54:26,151 DEBUG    errbot.core               *** frm = 208907614
+2022-01-19 01:54:26,152 DEBUG    errbot.core               *** username = 208907614
+2022-01-19 01:54:26,152 DEBUG    errbot.core               *** text = /help
+2022-01-19 01:54:26,153 DEBUG    errbot.plugins.ACLs       Check help for ACLs.
+2022-01-19 01:54:26,153 INFO     errbot.plugins.ACLs       Matching ACL {} against username 208907614 for command Help:help.
+2022-01-19 01:54:26,153 DEBUG    errbot.plugins.ACLs       Check if help is admin only command.
+2022-01-19 01:54:26,154 INFO     errbot.core               Processing command "help" with parameters "" from 208907614
+2022-01-19 01:54:26,154 DEBUG    errbot.core               Triggering callback_message on Plugins.
+2022-01-19 01:54:26,155 DEBUG    errbot.flow               Test if the command help is a trigger for an inflight flow ...
+2022-01-19 01:54:26,155 DEBUG    errbot.core               Triggering callback_message on ACLs.
+2022-01-19 01:54:26,155 DEBUG    errbot.flow               None matched.
+2022-01-19 01:54:26,155 DEBUG    errbot.core               Triggering callback_message on Help.
+2022-01-19 01:54:26,160 DEBUG    errbot.core               Triggering callback_message on VersionChecker.
+2022-01-19 01:54:26,160 DEBUG    errbot.core               Triggering callback_message on Flows.
+2022-01-19 01:54:26,160 DEBUG    errbot.core               Triggering callback_message on CommandNotFoundFilter.
+2022-01-19 01:54:26,160 DEBUG    errbot.core               Triggering callback_message on Health.
+2022-01-19 01:54:26,161 DEBUG    errbot.core               Triggering callback_message on Utils.
+2022-01-19 01:54:26,161 DEBUG    errbot.core               Triggering callback_message on Backup.
+2022-01-19 01:54:26,161 DEBUG    errbot.core               Triggering callback_message on ChatRoom.
+2022-01-19 01:54:26,161 DEBUG    errbot.core               Triggering callback_message on Example.
+2022-01-19 01:54:26,162 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189344
+2022-01-19 01:54:26,162 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189344
+2022-01-19 01:54:26,719 DEBUG    errbot.flow               Test if the command help is a trigger for an inflight flow ...
+2022-01-19 01:54:26,719 DEBUG    errbot.flow               None matched.
+2022-01-19 01:54:26,719 DEBUG    errbot.flow               Test if the command help is an auto-trigger for any flow ...
+2022-01-19 01:54:35,429 WARNING  telegram.vendor.ptb_urllib3.urllib3.connectionpool Connection pool is full, discarding connection: api.telegram.org
+2022-01-19 01:54:35,431 DEBUG    errbot.backends.telegram_messenger Processing update: {'message': {'new_chat_members': [], 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 8}], 'channel_chat_created': False, 'date': 1642535675, 'message_id': 16, 'photo': [], 'supergroup_chat_created': False, 'chat': {'first_name': 'Дияр', 'username': 'dake016', 'type': 'private', 'id': 208907614}, 'delete_chat_photo': False, 'new_chat_photo': [], 'text': '/restart', 'caption_entities': [], 'group_chat_created': False, 'from': {'first_name': 'Дияр', 'username': 'dake016', 'is_bot': False, 'language_code': 'ru', 'id': 208907614}}, 'update_id': 216189344}
+2022-01-19 01:54:35,432 DEBUG    errbot.core               *** frm = 208907614
+2022-01-19 01:54:35,432 DEBUG    errbot.core               *** username = 208907614
+2022-01-19 01:54:35,432 DEBUG    errbot.core               *** text = /restart
+2022-01-19 01:54:35,432 DEBUG    errbot.plugins.ACLs       Check restart for ACLs.
+2022-01-19 01:54:35,432 INFO     errbot.plugins.ACLs       Matching ACL {} against username 208907614 for command Health:restart.
+2022-01-19 01:54:35,433 DEBUG    errbot.plugins.ACLs       Check if restart is admin only command.
+2022-01-19 01:54:35,433 INFO     errbot.core               Processing command "restart" with parameters "" from 208907614
+2022-01-19 01:54:35,438 DEBUG    errbot.flow               Test if the command restart is a trigger for an inflight flow ...
+2022-01-19 01:54:35,438 DEBUG    errbot.flow               None matched.
+2022-01-19 01:54:35,651 DEBUG    errbot.storage            Closed storage 'Plugins'
+2022-01-19 01:54:35,653 DEBUG    errbot.storage            Closed storage 'ACLs'
+2022-01-19 01:54:35,654 DEBUG    errbot.core               Removing command filter: acls
+2022-01-19 01:54:35,655 DEBUG    errbot.storage            Closed storage 'Help'
+2022-01-19 01:54:35,656 DEBUG    errbot.botplugin          You still have active pollers at deactivation stage, I cleaned them up for you.
+2022-01-19 01:54:35,657 DEBUG    errbot.storage            Closed storage 'VersionChecker'
+2022-01-19 01:54:35,658 DEBUG    errbot.storage            Closed storage 'Flows'
+2022-01-19 01:54:35,658 DEBUG    errbot.storage            Closed storage 'CommandNotFoundFilter'
+2022-01-19 01:54:35,659 DEBUG    errbot.core               Removing command filter: cnf_filter
+2022-01-19 01:54:35,660 DEBUG    errbot.storage            Closed storage 'Health'
+2022-01-19 01:54:35,661 DEBUG    errbot.storage            Closed storage 'Utils'
+2022-01-19 01:54:35,662 DEBUG    errbot.storage            Closed storage 'Backup'
+2022-01-19 01:54:35,664 DEBUG    errbot.storage            Closed storage 'ChatRoom'
+2022-01-19 01:54:35,666 DEBUG    errbot.storage            Closed storage 'Example'
+2022-01-19 01:54:35,896 DEBUG    errbot.storage            Closed storage 'telegram_backend'
+2022-01-19 01:54:35,896 INFO     errbot.plugin_manager     Shutdown.
+2022-01-19 01:54:35,898 DEBUG    errbot.storage            Closed storage 'core'
+2022-01-19 01:54:35,898 INFO     errbot.plugin_manager     Bye.
+2022-01-19 01:54:35,899 DEBUG    errbot.storage            Closed storage 'repomgr'
+2022-01-19 01:54:36,106 INFO     errbot.bootstrap          Found Storage plugin: Shelf.
+2022-01-19 01:54:36,108 INFO     errbot.bootstrap          Found Backend plugin: Telegram
+2022-01-19 01:54:36,109 DEBUG    errbot.storage            Opening storage 'repomgr'
+2022-01-19 01:54:36,109 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/repomgr.db
+2022-01-19 01:54:36,197 DEBUG    errbot.core               ErrBot init.
+2022-01-19 01:54:36,198 DEBUG    errbot.backends.base      Backend init.
+2022-01-19 01:54:36,202 DEBUG    errbot.core               created a thread pool of size 10.
+2022-01-19 01:54:36,207 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2022-01-19 01:54:36,208 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2022-01-19 01:54:36,208 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2022-01-19 01:54:36,209 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2022-01-19 01:54:36,210 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2022-01-19 01:54:36,210 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2022-01-19 01:54:36,211 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+2022-01-19 01:54:36,211 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2022-01-19 01:54:36,211 DEBUG    MARKDOWN                  Successfully loaded extension "errbot.rendering.ansiext.AnsiExtension".
+2022-01-19 01:54:36,211 DEBUG    errbot.storage            Opening storage 'core'
+2022-01-19 01:54:36,212 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/core.db
+2022-01-19 01:54:36,212 DEBUG    errbot.core               Initializing backend storage
+2022-01-19 01:54:36,212 DEBUG    errbot.storage            Opening storage 'telegram_backend'
+2022-01-19 01:54:36,213 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/telegram_backend.db
+2022-01-19 01:54:36,214 DEBUG    errbot.plugin_manager     New entries added to sys.path:
+2022-01-19 01:54:36,215 DEBUG    errbot.plugin_manager     /home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins
+2022-01-19 01:54:36,215 DEBUG    errbot.plugin_manager     /home/dake/opera/errbot/plugins/err-example
+2022-01-19 01:54:36,317 INFO     errbot                    webhooks:  Flag to bind /echo to echo
+2022-01-19 01:54:36,318 DEBUG    errbot.plugins.Webserver  Logger for plugin initialized...
+2022-01-19 01:54:36,319 DEBUG    errbot.plugins.Plugins    Logger for plugin initialized...
+2022-01-19 01:54:36,320 DEBUG    errbot.plugins.ACLs       Logger for plugin initialized...
+2022-01-19 01:54:36,320 DEBUG    errbot.plugins.Help       Logger for plugin initialized...
+2022-01-19 01:54:36,349 DEBUG    errbot.plugins.VersionChecker Logger for plugin initialized...
+2022-01-19 01:54:36,350 DEBUG    errbot.plugins.TextCmds   Logger for plugin initialized...
+2022-01-19 01:54:36,352 DEBUG    errbot.plugins.Flows      Logger for plugin initialized...
+2022-01-19 01:54:36,352 DEBUG    errbot.plugins.CommandNotFoundFilter Logger for plugin initialized...
+2022-01-19 01:54:36,354 DEBUG    errbot.plugins.Health     Logger for plugin initialized...
+2022-01-19 01:54:36,355 DEBUG    errbot.plugins.Utils      Logger for plugin initialized...
+2022-01-19 01:54:36,356 DEBUG    errbot.plugins.Backup     Logger for plugin initialized...
+2022-01-19 01:54:36,357 DEBUG    errbot.plugins.ChatRoom   Logger for plugin initialized...
+2022-01-19 01:54:36,358 DEBUG    errbot.plugins.Example    Logger for plugin initialized...
+2022-01-19 01:54:36,358 DEBUG    errbot.bootstrap          Start serving commands from the telegram backend.
+2022-01-19 01:54:36,359 INFO     errbot.backends.telegram_messenger Initializing connection
+2022-01-19 01:54:36,665 INFO     errbot.backends.telegram_messenger Connected
+2022-01-19 01:54:36,666 INFO     errbot.core               Activate internal commands
+2022-01-19 01:54:36,666 INFO     errbot.plugin_manager     Activate bot plugins...
+2022-01-19 01:54:36,666 INFO     errbot.plugin_manager     Activate plugin: Webserver.
+2022-01-19 01:54:36,666 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:36,667 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2022-01-19 01:54:36,667 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2022-01-19 01:54:36,668 INFO     errbot.core_plugins.wsview Webhook routing echo
+2022-01-19 01:54:36,669 INFO     errbot.plugin_manager     Activate plugin: Plugins.
+2022-01-19 01:54:36,669 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:36,669 DEBUG    errbot.botplugin          Init storage for Plugins.
+2022-01-19 01:54:36,669 DEBUG    errbot.storage            Opening storage 'Plugins'
+2022-01-19 01:54:36,670 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Plugins.db
+2022-01-19 01:54:36,670 DEBUG    errbot.core               Adding command : plugin_activate -> plugin_activate.
+2022-01-19 01:54:36,670 DEBUG    errbot.core               Adding command : plugin_blacklist -> plugin_blacklist.
+2022-01-19 01:54:36,670 DEBUG    errbot.core               Adding command : plugin_config -> plugin_config.
+2022-01-19 01:54:36,671 DEBUG    errbot.core               Adding command : plugin_deactivate -> plugin_deactivate.
+2022-01-19 01:54:36,671 DEBUG    errbot.core               Adding command : plugin_info -> plugin_info.
+2022-01-19 01:54:36,671 DEBUG    errbot.core               Adding command : plugin_reload -> plugin_reload.
+2022-01-19 01:54:36,671 DEBUG    errbot.core               Adding command : plugin_unblacklist -> plugin_unblacklist.
+2022-01-19 01:54:36,671 DEBUG    errbot.core               Adding command : repos -> repos.
+2022-01-19 01:54:36,671 DEBUG    errbot.core               Adding command : repos_install -> repos_install.
+2022-01-19 01:54:36,672 DEBUG    errbot.core               Adding command : repos_search -> repos_search.
+2022-01-19 01:54:36,672 DEBUG    errbot.core               Adding command : repos_uninstall -> repos_uninstall.
+2022-01-19 01:54:36,672 DEBUG    errbot.core               Adding command : repos_update -> repos_update.
+2022-01-19 01:54:36,672 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2022-01-19 01:54:36,672 INFO     errbot.plugin_manager     Activate plugin: ACLs.
+2022-01-19 01:54:36,673 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:36,673 DEBUG    errbot.botplugin          Init storage for ACLs.
+2022-01-19 01:54:36,673 DEBUG    errbot.storage            Opening storage 'ACLs'
+2022-01-19 01:54:36,673 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/ACLs.db
+2022-01-19 01:54:36,674 DEBUG    errbot.core               Adding command filter: acls
+2022-01-19 01:54:36,674 INFO     errbot.core_plugins.wsview Checking ACLS for webhooks
+2022-01-19 01:54:36,674 INFO     errbot.plugin_manager     Activate plugin: Help.
+2022-01-19 01:54:36,674 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:36,675 DEBUG    errbot.botplugin          Init storage for Help.
+2022-01-19 01:54:36,675 DEBUG    errbot.storage            Opening storage 'Help'
+2022-01-19 01:54:36,675 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Help.db
+2022-01-19 01:54:36,676 DEBUG    errbot.core               Adding command : about -> about.
+2022-01-19 01:54:36,676 DEBUG    errbot.core               Adding command : apropos -> apropos.
+2022-01-19 01:54:36,676 DEBUG    errbot.core               Adding command : help -> help.
+2022-01-19 01:54:36,677 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2022-01-19 01:54:36,677 INFO     errbot.plugin_manager     Activate plugin: VersionChecker.
+2022-01-19 01:54:36,677 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:36,678 DEBUG    errbot.plugins.VersionChecker Checking version in background.
+2022-01-19 01:54:36,679 DEBUG    urllib3.connectionpool    Starting new HTTPS connection (1): errbot.io:443
+2022-01-19 01:54:36,680 DEBUG    errbot.botplugin          Programming the polling of version_check every 86400 seconds with args [] and kwargs {}
+2022-01-19 01:54:36,681 DEBUG    errbot.botplugin          Init storage for VersionChecker.
+2022-01-19 01:54:36,681 DEBUG    errbot.storage            Opening storage 'VersionChecker'
+2022-01-19 01:54:36,682 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/VersionChecker.db
+2022-01-19 01:54:36,682 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2022-01-19 01:54:36,683 INFO     errbot.plugin_manager     Activate plugin: TextCmds.
+2022-01-19 01:54:36,683 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:36,683 INFO     errbot.core_plugins.wsview Checking TextModeCmds for webhooks
+2022-01-19 01:54:36,683 INFO     errbot.plugin_manager     Activate plugin: Flows.
+2022-01-19 01:54:36,684 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:36,684 DEBUG    errbot.botplugin          Init storage for Flows.
+2022-01-19 01:54:36,684 DEBUG    errbot.storage            Opening storage 'Flows'
+2022-01-19 01:54:36,684 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Flows.db
+2022-01-19 01:54:36,685 DEBUG    errbot.core               Adding command : flows_kill -> flows_kill.
+2022-01-19 01:54:36,685 DEBUG    errbot.core               Adding command : flows_list -> flows_list.
+2022-01-19 01:54:36,685 DEBUG    errbot.core               Adding command : flows_show -> flows_show.
+2022-01-19 01:54:36,685 DEBUG    errbot.core               Adding command : flows_start -> flows_start.
+2022-01-19 01:54:36,685 DEBUG    errbot.core               Adding command : flows_status -> flows_status.
+2022-01-19 01:54:36,686 DEBUG    errbot.core               Adding command : flows_stop -> flows_stop.
+2022-01-19 01:54:36,686 INFO     errbot.core_plugins.wsview Checking Flows for webhooks
+2022-01-19 01:54:36,686 INFO     errbot.plugin_manager     Activate plugin: CommandNotFoundFilter.
+2022-01-19 01:54:36,686 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:36,687 DEBUG    errbot.botplugin          Init storage for CommandNotFoundFilter.
+2022-01-19 01:54:36,687 DEBUG    errbot.storage            Opening storage 'CommandNotFoundFilter'
+2022-01-19 01:54:36,687 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/CommandNotFoundFilter.db
+2022-01-19 01:54:36,687 DEBUG    errbot.core               Adding command filter: cnf_filter
+2022-01-19 01:54:36,688 INFO     errbot.core_plugins.wsview Checking CommandNotFoundFilter for webhooks
+2022-01-19 01:54:36,688 INFO     errbot.plugin_manager     Activate plugin: Health.
+2022-01-19 01:54:36,688 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:36,688 DEBUG    errbot.botplugin          Init storage for Health.
+2022-01-19 01:54:36,688 DEBUG    errbot.storage            Opening storage 'Health'
+2022-01-19 01:54:36,688 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Health.db
+2022-01-19 01:54:36,689 DEBUG    errbot.core               Adding command : restart -> restart.
+2022-01-19 01:54:36,689 DEBUG    errbot.core               Adding command : shutdown -> shutdown.
+2022-01-19 01:54:36,689 DEBUG    errbot.core               Adding command : status -> status.
+2022-01-19 01:54:36,689 DEBUG    errbot.core               Adding command : status_gc -> status_gc.
+2022-01-19 01:54:36,690 DEBUG    errbot.core               Adding command : status_load -> status_load.
+2022-01-19 01:54:36,690 DEBUG    errbot.core               Adding command : status_plugins -> status_plugins.
+2022-01-19 01:54:36,690 DEBUG    errbot.core               Adding command : uptime -> uptime.
+2022-01-19 01:54:36,690 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2022-01-19 01:54:36,690 INFO     errbot.plugin_manager     Activate plugin: Utils.
+2022-01-19 01:54:36,691 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:36,692 DEBUG    errbot.botplugin          Init storage for Utils.
+2022-01-19 01:54:36,692 DEBUG    errbot.storage            Opening storage 'Utils'
+2022-01-19 01:54:36,692 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Utils.db
+2022-01-19 01:54:36,693 DEBUG    errbot.core               Adding command : echo -> echo.
+2022-01-19 01:54:36,693 DEBUG    errbot.core               Adding command : history -> history.
+2022-01-19 01:54:36,693 DEBUG    errbot.core               Adding command : log_tail -> log_tail.
+2022-01-19 01:54:36,693 DEBUG    errbot.core               Adding command : render_test -> render_test.
+2022-01-19 01:54:36,694 DEBUG    errbot.core               Adding command : whoami -> whoami.
+2022-01-19 01:54:36,694 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2022-01-19 01:54:36,694 INFO     errbot.plugin_manager     Activate plugin: Backup.
+2022-01-19 01:54:36,694 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:36,695 DEBUG    errbot.botplugin          Init storage for Backup.
+2022-01-19 01:54:36,695 DEBUG    errbot.storage            Opening storage 'Backup'
+2022-01-19 01:54:36,695 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Backup.db
+2022-01-19 01:54:36,695 DEBUG    errbot.core               Adding command : backup -> backup.
+2022-01-19 01:54:36,696 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2022-01-19 01:54:36,696 INFO     errbot.plugin_manager     Activate plugin: ChatRoom.
+2022-01-19 01:54:36,697 DEBUG    errbot.templating         Templates directory found for this plugin [/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/core_plugins/templates]
+2022-01-19 01:54:36,697 DEBUG    errbot.botplugin          Init storage for ChatRoom.
+2022-01-19 01:54:36,697 DEBUG    errbot.storage            Opening storage 'ChatRoom'
+2022-01-19 01:54:36,697 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/ChatRoom.db
+2022-01-19 01:54:36,698 DEBUG    errbot.core               Adding command : room_create -> room_create.
+2022-01-19 01:54:36,698 DEBUG    errbot.core               Adding command : room_destroy -> room_destroy.
+2022-01-19 01:54:36,698 DEBUG    errbot.core               Adding command : room_invite -> room_invite.
+2022-01-19 01:54:36,698 DEBUG    errbot.core               Adding command : room_join -> room_join.
+2022-01-19 01:54:36,699 DEBUG    errbot.core               Adding command : room_leave -> room_leave.
+2022-01-19 01:54:36,699 DEBUG    errbot.core               Adding command : room_list -> room_list.
+2022-01-19 01:54:36,699 DEBUG    errbot.core               Adding command : room_occupants -> room_occupants.
+2022-01-19 01:54:36,699 DEBUG    errbot.core               Adding command : room_topic -> room_topic.
+2022-01-19 01:54:36,699 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2022-01-19 01:54:36,699 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2022-01-19 01:54:36,700 INFO     errbot.plugin_manager     Activate plugin: Example.
+2022-01-19 01:54:36,700 DEBUG    errbot.templating         No templates directory found for this plugin [Looking for /home/dake/opera/errbot/plugins/err-example/templates]
+2022-01-19 01:54:36,700 DEBUG    errbot.botplugin          Init storage for Example.
+2022-01-19 01:54:36,700 DEBUG    errbot.storage            Opening storage 'Example'
+2022-01-19 01:54:36,700 DEBUG    errbot.storage.shelf      Open shelf storage /home/dake/opera/errbot/data/Example.db
+2022-01-19 01:54:36,701 DEBUG    errbot.core               Adding command : tryme -> tryme.
+2022-01-19 01:54:36,701 INFO     errbot.core_plugins.wsview Checking Example for webhooks
+2022-01-19 01:54:36,701 DEBUG    errbot.plugin_manager     Activate flow plugins ...
+2022-01-19 01:54:36,701 INFO     errbot.core               Notifying connection to all the plugins...
+2022-01-19 01:54:36,702 DEBUG    errbot.core               Trigger callback_connect on Plugins.
+2022-01-19 01:54:36,702 DEBUG    errbot.core               Trigger callback_connect on ACLS.
+2022-01-19 01:54:36,702 DEBUG    errbot.core               Trigger callback_connect on Help.
+2022-01-19 01:54:36,702 DEBUG    errbot.core               Trigger callback_connect on VersionChecker.
+2022-01-19 01:54:36,702 DEBUG    errbot.core               Trigger callback_connect on Flows.
+2022-01-19 01:54:36,702 DEBUG    errbot.core               Trigger callback_connect on CommandNotFoundFilter.
+2022-01-19 01:54:36,703 DEBUG    errbot.core               Trigger callback_connect on Health.
+2022-01-19 01:54:36,703 DEBUG    errbot.core               Trigger callback_connect on Utils.
+2022-01-19 01:54:36,703 DEBUG    errbot.core               Trigger callback_connect on Backup.
+2022-01-19 01:54:36,703 DEBUG    errbot.core               Trigger callback_connect on ChatRoom.
+2022-01-19 01:54:36,703 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2022-01-19 01:54:36,703 DEBUG    errbot.core               Trigger callback_connect on Example.
+2022-01-19 01:54:36,703 INFO     errbot.core               Plugin activation done.
+2022-01-19 01:54:36,704 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189345
+2022-01-19 01:54:36,896 DEBUG    urllib3.connectionpool    https://errbot.io:443 "GET /versions.json HTTP/1.1" 302 240
+2022-01-19 01:54:36,898 DEBUG    urllib3.connectionpool    Starting new HTTPS connection (1): errbot.readthedocs.io:443
+2022-01-19 01:54:36,976 DEBUG    urllib3.connectionpool    https://errbot.readthedocs.io:443 "GET /versions.json HTTP/1.1" 302 0
+2022-01-19 01:54:37,007 DEBUG    urllib3.connectionpool    https://errbot.readthedocs.io:443 "GET /en/latest/versions.json HTTP/1.1" 200 47
+2022-01-19 01:54:37,009 DEBUG    errbot.plugins.VersionChecker Latest Errbot version is: 6.1.8
+2022-01-19 01:54:37,009 DEBUG    errbot.plugins.VersionChecker Installed Errbot version is: 6.1.8
+2022-01-19 01:54:54,517 DEBUG    errbot.backends.telegram_messenger Processing update: {'update_id': 216189345, 'message': {'date': 1642535694, 'message_id': 19, 'delete_chat_photo': False, 'new_chat_members': [], 'supergroup_chat_created': False, 'text': '/room create', 'new_chat_photo': [], 'caption_entities': [], 'entities': [{'offset': 0, 'type': 'bot_command', 'length': 5}], 'photo': [], 'channel_chat_created': False, 'chat': {'first_name': 'Дияр', 'username': 'dake016', 'id': 208907614, 'type': 'private'}, 'group_chat_created': False, 'from': {'first_name': 'Дияр', 'username': 'dake016', 'language_code': 'ru', 'id': 208907614, 'is_bot': False}}}
+2022-01-19 01:54:54,518 DEBUG    errbot.core               *** frm = 208907614
+2022-01-19 01:54:54,518 DEBUG    errbot.core               *** username = 208907614
+2022-01-19 01:54:54,519 DEBUG    errbot.core               *** text = /room create
+2022-01-19 01:54:54,519 DEBUG    errbot.plugins.ACLs       Check room_create for ACLs.
+2022-01-19 01:54:54,520 INFO     errbot.plugins.ACLs       Matching ACL {} against username 208907614 for command ChatRoom:room_create.
+2022-01-19 01:54:54,520 DEBUG    errbot.plugins.ACLs       Check if room_create is admin only command.
+2022-01-19 01:54:54,520 INFO     errbot.core               Processing command "room_create" with parameters "" from 208907614
+2022-01-19 01:54:54,520 DEBUG    errbot.core               Triggering callback_message on Plugins.
+2022-01-19 01:54:54,520 DEBUG    errbot.core               Triggering callback_message on ACLs.
+2022-01-19 01:54:54,521 DEBUG    errbot.core               Triggering callback_message on Help.
+2022-01-19 01:54:54,521 DEBUG    errbot.flow               Test if the command room_create is a trigger for an inflight flow ...
+2022-01-19 01:54:54,521 DEBUG    errbot.core               Triggering callback_message on VersionChecker.
+2022-01-19 01:54:54,521 DEBUG    errbot.flow               None matched.
+2022-01-19 01:54:54,521 DEBUG    errbot.core               Triggering callback_message on Flows.
+2022-01-19 01:54:54,523 DEBUG    errbot.core               Triggering callback_message on CommandNotFoundFilter.
+2022-01-19 01:54:54,523 DEBUG    errbot.core               Triggering callback_message on Health.
+2022-01-19 01:54:54,523 DEBUG    errbot.core               Triggering callback_message on Utils.
+2022-01-19 01:54:54,524 DEBUG    errbot.core               Triggering callback_message on Backup.
+2022-01-19 01:54:54,524 DEBUG    errbot.core               Triggering callback_message on ChatRoom.
+2022-01-19 01:54:54,524 DEBUG    errbot.core               Triggering callback_message on Example.
+2022-01-19 01:54:54,525 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189346
+2022-01-19 01:54:54,525 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189346
+2022-01-19 01:54:54,695 DEBUG    errbot.flow               Test if the command room_create is a trigger for an inflight flow ...
+2022-01-19 01:54:54,695 DEBUG    errbot.flow               None matched.
+2022-01-19 01:54:54,695 DEBUG    errbot.flow               Test if the command room_create is an auto-trigger for any flow ...
+2022-01-19 01:55:09,872 WARNING  telegram.vendor.ptb_urllib3.urllib3.connectionpool Connection pool is full, discarding connection: api.telegram.org
+2022-01-19 01:55:09,874 DEBUG    errbot.backends.telegram_messenger Processing update: {'update_id': 216189346, 'message': {'date': 1642535709, 'message_id': 21, 'delete_chat_photo': False, 'new_chat_members': [], 'supergroup_chat_created': False, 'text': 'testgroup', 'new_chat_photo': [], 'caption_entities': [], 'entities': [], 'photo': [], 'channel_chat_created': False, 'chat': {'first_name': 'Дияр', 'username': 'dake016', 'id': 208907614, 'type': 'private'}, 'group_chat_created': False, 'from': {'first_name': 'Дияр', 'username': 'dake016', 'language_code': 'ru', 'id': 208907614, 'is_bot': False}}}
+2022-01-19 01:55:09,874 DEBUG    errbot.core               *** frm = 208907614
+2022-01-19 01:55:09,875 DEBUG    errbot.core               *** username = 208907614
+2022-01-19 01:55:09,875 DEBUG    errbot.core               *** text = testgroup
+2022-01-19 01:55:09,875 DEBUG    errbot.core               Triggering callback_message on Plugins.
+2022-01-19 01:55:09,876 DEBUG    errbot.core               Triggering callback_message on ACLs.
+2022-01-19 01:55:09,876 DEBUG    errbot.core               Triggering callback_message on Help.
+2022-01-19 01:55:09,876 DEBUG    errbot.core               Triggering callback_message on VersionChecker.
+2022-01-19 01:55:09,876 DEBUG    errbot.core               Triggering callback_message on Flows.
+2022-01-19 01:55:09,877 DEBUG    errbot.core               Triggering callback_message on CommandNotFoundFilter.
+2022-01-19 01:55:09,877 DEBUG    errbot.core               Triggering callback_message on Health.
+2022-01-19 01:55:09,877 DEBUG    errbot.core               Triggering callback_message on Utils.
+2022-01-19 01:55:09,877 DEBUG    errbot.core               Triggering callback_message on Backup.
+2022-01-19 01:55:09,877 DEBUG    errbot.core               Triggering callback_message on ChatRoom.
+2022-01-19 01:55:09,877 DEBUG    errbot.core               Triggering callback_message on Example.
+2022-01-19 01:55:09,878 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189347
+2022-01-19 01:55:09,878 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189347
+2022-01-19 01:55:43,883 DEBUG    errbot.backends.telegram_messenger Processing update: {'update_id': 216189347, 'message': {'date': 1642535743, 'message_id': 22, 'delete_chat_photo': False, 'new_chat_members': [], 'supergroup_chat_created': False, 'text': '/about', 'new_chat_photo': [], 'caption_entities': [], 'entities': [{'offset': 0, 'type': 'bot_command', 'length': 6}], 'photo': [], 'channel_chat_created': False, 'chat': {'first_name': 'Дияр', 'username': 'dake016', 'id': 208907614, 'type': 'private'}, 'group_chat_created': False, 'from': {'first_name': 'Дияр', 'username': 'dake016', 'language_code': 'ru', 'id': 208907614, 'is_bot': False}}}
+2022-01-19 01:55:43,883 DEBUG    errbot.core               *** frm = 208907614
+2022-01-19 01:55:43,884 DEBUG    errbot.core               *** username = 208907614
+2022-01-19 01:55:43,884 DEBUG    errbot.core               *** text = /about
+2022-01-19 01:55:43,884 DEBUG    errbot.plugins.ACLs       Check about for ACLs.
+2022-01-19 01:55:43,884 INFO     errbot.plugins.ACLs       Matching ACL {} against username 208907614 for command Help:about.
+2022-01-19 01:55:43,884 DEBUG    errbot.plugins.ACLs       Check if about is admin only command.
+2022-01-19 01:55:43,885 INFO     errbot.core               Processing command "about" with parameters "" from 208907614
+2022-01-19 01:55:43,885 DEBUG    errbot.core               Triggering callback_message on Plugins.
+2022-01-19 01:55:43,885 DEBUG    errbot.core               Triggering callback_message on ACLs.
+2022-01-19 01:55:43,885 DEBUG    errbot.flow               Test if the command about is a trigger for an inflight flow ...
+2022-01-19 01:55:43,886 DEBUG    errbot.core               Triggering callback_message on Help.
+2022-01-19 01:55:43,886 DEBUG    errbot.flow               None matched.
+2022-01-19 01:55:43,886 DEBUG    errbot.core               Triggering callback_message on VersionChecker.
+2022-01-19 01:55:43,887 DEBUG    errbot.core               Triggering callback_message on Flows.
+2022-01-19 01:55:43,888 DEBUG    errbot.core               Triggering callback_message on CommandNotFoundFilter.
+2022-01-19 01:55:43,889 DEBUG    errbot.core               Triggering callback_message on Health.
+2022-01-19 01:55:43,890 DEBUG    errbot.core               Triggering callback_message on Utils.
+2022-01-19 01:55:43,893 DEBUG    errbot.core               Triggering callback_message on Backup.
+2022-01-19 01:55:43,894 DEBUG    errbot.core               Triggering callback_message on ChatRoom.
+2022-01-19 01:55:43,894 DEBUG    errbot.core               Triggering callback_message on Example.
+2022-01-19 01:55:43,894 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189348
+2022-01-19 01:55:43,894 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189348
+2022-01-19 01:55:44,028 DEBUG    errbot.flow               Test if the command about is a trigger for an inflight flow ...
+2022-01-19 01:55:44,029 DEBUG    errbot.flow               None matched.
+2022-01-19 01:55:44,029 DEBUG    errbot.flow               Test if the command about is an auto-trigger for any flow ...
+2022-01-19 01:56:34,179 WARNING  telegram.vendor.ptb_urllib3.urllib3.connectionpool Connection pool is full, discarding connection: api.telegram.org
+2022-01-19 01:56:34,181 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189348
+2022-01-19 01:56:34,182 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189348
+2022-01-19 01:56:40,001 DEBUG    errbot.backends.telegram_messenger Processing update: {'update_id': 216189348, 'message': {'date': 1642535799, 'message_id': 24, 'delete_chat_photo': False, 'new_chat_members': [], 'supergroup_chat_created': False, 'text': '/repos', 'new_chat_photo': [], 'caption_entities': [], 'entities': [{'offset': 0, 'type': 'bot_command', 'length': 6}], 'photo': [], 'channel_chat_created': False, 'chat': {'first_name': 'Дияр', 'username': 'dake016', 'id': 208907614, 'type': 'private'}, 'group_chat_created': False, 'from': {'first_name': 'Дияр', 'username': 'dake016', 'language_code': 'ru', 'id': 208907614, 'is_bot': False}}}
+2022-01-19 01:56:40,002 DEBUG    errbot.core               *** frm = 208907614
+2022-01-19 01:56:40,002 DEBUG    errbot.core               *** username = 208907614
+2022-01-19 01:56:40,002 DEBUG    errbot.core               *** text = /repos
+2022-01-19 01:56:40,002 DEBUG    errbot.plugins.ACLs       Check repos for ACLs.
+2022-01-19 01:56:40,003 INFO     errbot.plugins.ACLs       Matching ACL {} against username 208907614 for command Plugins:repos.
+2022-01-19 01:56:40,003 DEBUG    errbot.plugins.ACLs       Check if repos is admin only command.
+2022-01-19 01:56:40,003 INFO     errbot.core               Processing command "repos" with parameters "" from 208907614
+2022-01-19 01:56:40,003 DEBUG    errbot.core               Triggering callback_message on Plugins.
+2022-01-19 01:56:40,004 DEBUG    errbot.flow               Test if the command repos is a trigger for an inflight flow ...
+2022-01-19 01:56:40,004 DEBUG    errbot.core               Triggering callback_message on ACLs.
+2022-01-19 01:56:40,004 DEBUG    errbot.flow               None matched.
+2022-01-19 01:56:40,005 DEBUG    errbot.core               Triggering callback_message on Help.
+2022-01-19 01:56:40,011 DEBUG    errbot.core               Triggering callback_message on VersionChecker.
+2022-01-19 01:56:40,012 DEBUG    errbot.core               Triggering callback_message on Flows.
+2022-01-19 01:56:40,013 DEBUG    errbot.core               Triggering callback_message on CommandNotFoundFilter.
+2022-01-19 01:56:40,013 DEBUG    errbot.core               Triggering callback_message on Health.
+2022-01-19 01:56:40,013 DEBUG    errbot.core               Triggering callback_message on Utils.
+2022-01-19 01:56:40,013 DEBUG    errbot.core               Triggering callback_message on Backup.
+2022-01-19 01:56:40,014 DEBUG    errbot.core               Triggering callback_message on ChatRoom.
+2022-01-19 01:56:40,014 DEBUG    errbot.core               Triggering callback_message on Example.
+2022-01-19 01:56:40,014 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189349
+2022-01-19 01:56:40,014 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189349
+2022-01-19 01:56:40,134 DEBUG    errbot.flow               Test if the command repos is a trigger for an inflight flow ...
+2022-01-19 01:56:40,134 DEBUG    errbot.flow               None matched.
+2022-01-19 01:56:40,134 DEBUG    errbot.flow               Test if the command repos is an auto-trigger for any flow ...
+2022-01-19 01:56:44,684 WARNING  telegram.vendor.ptb_urllib3.urllib3.connectionpool Connection pool is full, discarding connection: api.telegram.org
+2022-01-19 01:56:44,686 DEBUG    errbot.backends.telegram_messenger Processing update: {'update_id': 216189349, 'message': {'date': 1642535804, 'message_id': 26, 'delete_chat_photo': False, 'new_chat_members': [], 'supergroup_chat_created': False, 'text': '/echo', 'new_chat_photo': [], 'caption_entities': [], 'entities': [{'offset': 0, 'type': 'bot_command', 'length': 5}], 'photo': [], 'channel_chat_created': False, 'chat': {'first_name': 'Дияр', 'username': 'dake016', 'id': 208907614, 'type': 'private'}, 'group_chat_created': False, 'from': {'first_name': 'Дияр', 'username': 'dake016', 'language_code': 'ru', 'id': 208907614, 'is_bot': False}}}
+2022-01-19 01:56:44,686 DEBUG    errbot.core               *** frm = 208907614
+2022-01-19 01:56:44,686 DEBUG    errbot.core               *** username = 208907614
+2022-01-19 01:56:44,687 DEBUG    errbot.core               *** text = /echo
+2022-01-19 01:56:44,687 DEBUG    errbot.plugins.ACLs       Check echo for ACLs.
+2022-01-19 01:56:44,687 INFO     errbot.plugins.ACLs       Matching ACL {} against username 208907614 for command Utils:echo.
+2022-01-19 01:56:44,687 DEBUG    errbot.plugins.ACLs       Check if echo is admin only command.
+2022-01-19 01:56:44,687 INFO     errbot.core               Processing command "echo" with parameters "" from 208907614
+2022-01-19 01:56:44,688 DEBUG    errbot.core               Triggering callback_message on Plugins.
+2022-01-19 01:56:44,688 DEBUG    errbot.flow               Test if the command echo is a trigger for an inflight flow ...
+2022-01-19 01:56:44,688 DEBUG    errbot.core               Triggering callback_message on ACLs.
+2022-01-19 01:56:44,689 DEBUG    errbot.flow               None matched.
+2022-01-19 01:56:44,689 DEBUG    errbot.core               Triggering callback_message on Help.
+2022-01-19 01:56:44,689 DEBUG    errbot.flow               Test if the command echo is a trigger for an inflight flow ...
+2022-01-19 01:56:44,690 DEBUG    errbot.core               Triggering callback_message on VersionChecker.
+2022-01-19 01:56:44,690 DEBUG    errbot.flow               None matched.
+2022-01-19 01:56:44,690 DEBUG    errbot.core               Triggering callback_message on Flows.
+2022-01-19 01:56:44,690 DEBUG    errbot.flow               Test if the command echo is an auto-trigger for any flow ...
+2022-01-19 01:56:44,691 DEBUG    errbot.core               Triggering callback_message on CommandNotFoundFilter.
+2022-01-19 01:56:44,691 DEBUG    errbot.core               Triggering callback_message on Health.
+2022-01-19 01:56:44,692 DEBUG    errbot.core               Triggering callback_message on Utils.
+2022-01-19 01:56:44,692 DEBUG    errbot.core               Triggering callback_message on Backup.
+2022-01-19 01:56:44,692 DEBUG    errbot.core               Triggering callback_message on ChatRoom.
+2022-01-19 01:56:44,693 DEBUG    errbot.core               Triggering callback_message on Example.
+2022-01-19 01:56:44,693 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189350
+2022-01-19 01:56:44,693 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189350
+2022-01-19 01:56:46,927 DEBUG    errbot.backends.telegram_messenger Processing update: {'update_id': 216189350, 'message': {'date': 1642535806, 'message_id': 27, 'delete_chat_photo': False, 'new_chat_members': [], 'supergroup_chat_created': False, 'text': 'asd', 'new_chat_photo': [], 'caption_entities': [], 'entities': [], 'photo': [], 'channel_chat_created': False, 'chat': {'first_name': 'Дияр', 'username': 'dake016', 'id': 208907614, 'type': 'private'}, 'group_chat_created': False, 'from': {'first_name': 'Дияр', 'username': 'dake016', 'language_code': 'ru', 'id': 208907614, 'is_bot': False}}}
+2022-01-19 01:56:46,927 DEBUG    errbot.core               *** frm = 208907614
+2022-01-19 01:56:46,927 DEBUG    errbot.core               *** username = 208907614
+2022-01-19 01:56:46,927 DEBUG    errbot.core               *** text = asd
+2022-01-19 01:56:46,928 DEBUG    errbot.core               Triggering callback_message on Plugins.
+2022-01-19 01:56:46,928 DEBUG    errbot.core               Triggering callback_message on ACLs.
+2022-01-19 01:56:46,928 DEBUG    errbot.core               Triggering callback_message on Help.
+2022-01-19 01:56:46,928 DEBUG    errbot.core               Triggering callback_message on VersionChecker.
+2022-01-19 01:56:46,928 DEBUG    errbot.core               Triggering callback_message on Flows.
+2022-01-19 01:56:46,929 DEBUG    errbot.core               Triggering callback_message on CommandNotFoundFilter.
+2022-01-19 01:56:46,929 DEBUG    errbot.core               Triggering callback_message on Health.
+2022-01-19 01:56:46,929 DEBUG    errbot.core               Triggering callback_message on Utils.
+2022-01-19 01:56:46,929 DEBUG    errbot.core               Triggering callback_message on Backup.
+2022-01-19 01:56:46,929 DEBUG    errbot.core               Triggering callback_message on ChatRoom.
+2022-01-19 01:56:46,930 DEBUG    errbot.core               Triggering callback_message on Example.
+2022-01-19 01:56:46,930 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189351
+2022-01-19 01:56:46,930 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189351
+2022-01-19 01:56:54,945 DEBUG    errbot.backends.telegram_messenger Processing update: {'update_id': 216189351, 'message': {'date': 1642535814, 'message_id': 28, 'delete_chat_photo': False, 'new_chat_members': [], 'supergroup_chat_created': False, 'text': '/echo asd', 'new_chat_photo': [], 'caption_entities': [], 'entities': [{'offset': 0, 'type': 'bot_command', 'length': 5}], 'photo': [], 'channel_chat_created': False, 'chat': {'first_name': 'Дияр', 'username': 'dake016', 'id': 208907614, 'type': 'private'}, 'group_chat_created': False, 'from': {'first_name': 'Дияр', 'username': 'dake016', 'language_code': 'ru', 'id': 208907614, 'is_bot': False}}}
+2022-01-19 01:56:54,945 DEBUG    errbot.core               *** frm = 208907614
+2022-01-19 01:56:54,946 DEBUG    errbot.core               *** username = 208907614
+2022-01-19 01:56:54,946 DEBUG    errbot.core               *** text = /echo asd
+2022-01-19 01:56:54,946 DEBUG    errbot.plugins.ACLs       Check echo for ACLs.
+2022-01-19 01:56:54,947 INFO     errbot.plugins.ACLs       Matching ACL {} against username 208907614 for command Utils:echo.
+2022-01-19 01:56:54,947 DEBUG    errbot.plugins.ACLs       Check if echo is admin only command.
+2022-01-19 01:56:54,947 INFO     errbot.core               Processing command "echo" with parameters "asd" from 208907614
+2022-01-19 01:56:54,947 DEBUG    errbot.core               Triggering callback_message on Plugins.
+2022-01-19 01:56:54,948 DEBUG    errbot.flow               Test if the command echo is a trigger for an inflight flow ...
+2022-01-19 01:56:54,948 DEBUG    errbot.core               Triggering callback_message on ACLs.
+2022-01-19 01:56:54,948 DEBUG    errbot.flow               None matched.
+2022-01-19 01:56:54,948 DEBUG    errbot.core               Triggering callback_message on Help.
+2022-01-19 01:56:54,949 DEBUG    errbot.core               Triggering callback_message on VersionChecker.
+2022-01-19 01:56:54,950 DEBUG    errbot.core               Triggering callback_message on Flows.
+2022-01-19 01:56:54,950 DEBUG    errbot.core               Triggering callback_message on CommandNotFoundFilter.
+2022-01-19 01:56:54,950 DEBUG    errbot.core               Triggering callback_message on Health.
+2022-01-19 01:56:54,950 DEBUG    errbot.core               Triggering callback_message on Utils.
+2022-01-19 01:56:54,951 DEBUG    errbot.core               Triggering callback_message on Backup.
+2022-01-19 01:56:54,951 DEBUG    errbot.core               Triggering callback_message on ChatRoom.
+2022-01-19 01:56:54,951 DEBUG    errbot.core               Triggering callback_message on Example.
+2022-01-19 01:56:54,951 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 01:56:54,951 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 01:56:55,159 DEBUG    errbot.flow               Test if the command echo is a trigger for an inflight flow ...
+2022-01-19 01:56:55,159 DEBUG    errbot.flow               None matched.
+2022-01-19 01:56:55,159 DEBUG    errbot.flow               Test if the command echo is an auto-trigger for any flow ...
+2022-01-19 01:57:45,234 WARNING  telegram.vendor.ptb_urllib3.urllib3.connectionpool Connection pool is full, discarding connection: api.telegram.org
+2022-01-19 01:57:45,236 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 01:57:45,236 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 01:58:35,332 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 01:58:35,332 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 01:59:25,425 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 01:59:25,425 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:00:15,521 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:00:15,521 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:01:05,615 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:01:05,616 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:01:55,710 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:01:55,710 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:02:45,804 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:02:45,804 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:03:35,899 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:03:35,899 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:04:25,994 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:04:25,994 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:05:16,088 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:05:16,089 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:06:06,184 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:06:06,184 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:06:56,278 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:06:56,278 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:07:46,372 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:07:46,372 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:08:36,466 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:08:36,466 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:09:26,562 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:09:26,562 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:10:16,657 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:10:16,657 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:11:06,752 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:11:06,752 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:11:56,847 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:11:56,847 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:12:46,947 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:12:46,947 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:13:37,041 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:13:37,041 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:14:27,144 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:14:27,144 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:15:17,238 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:15:17,238 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:16:07,333 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:16:07,333 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:16:57,428 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:16:57,428 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:17:47,523 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:17:47,523 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:18:37,617 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:18:37,618 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:19:27,714 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:19:27,714 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:20:17,809 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:20:17,809 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:21:07,905 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:21:07,905 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:21:57,999 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:21:57,999 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:22:48,095 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:22:48,095 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:23:38,235 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:23:38,236 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:24:28,334 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:24:28,334 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:25:18,428 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:25:18,428 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:26:08,524 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:26:08,524 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:26:58,618 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:26:58,618 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:27:48,711 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:27:48,711 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:28:38,805 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:28:38,805 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:29:28,903 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:29:28,903 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:30:18,997 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:30:18,998 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:31:09,092 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:31:09,092 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:31:59,187 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:31:59,187 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:32:49,282 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:32:49,283 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:33:39,378 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:33:39,378 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:34:29,472 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:34:29,473 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:35:19,566 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:35:19,567 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:36:09,663 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:36:09,663 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:36:59,755 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:36:59,755 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:37:49,849 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:37:49,849 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:38:39,942 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:38:39,943 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:39:30,037 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:39:30,037 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:40:20,132 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:40:20,132 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:41:10,226 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:41:10,227 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:42:00,321 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:42:00,321 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:42:50,414 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:42:50,415 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:43:40,507 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:43:40,508 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:44:30,602 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:44:30,603 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:45:20,698 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:45:20,698 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:46:10,792 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:46:10,792 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:47:00,887 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:47:00,888 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:47:50,981 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:47:50,981 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:48:41,077 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:48:41,077 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:49:31,171 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:49:31,171 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:50:21,266 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:50:21,267 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:51:11,360 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:51:11,360 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:52:01,454 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:52:01,454 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:52:51,549 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:52:51,549 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:53:41,643 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:53:41,643 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:54:31,738 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:54:31,738 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:55:21,833 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:55:21,833 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:56:11,927 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:56:11,927 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:57:02,033 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:57:02,033 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:57:52,128 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:57:52,128 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:58:42,223 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:58:42,223 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 02:59:32,316 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 02:59:32,316 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:00:22,412 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:00:22,412 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:01:12,505 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:01:12,505 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:02:02,598 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:02:02,598 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:02:52,692 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:02:52,693 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:03:42,786 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:03:42,786 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:04:32,883 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:04:32,884 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:05:22,977 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:05:22,977 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:06:13,070 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:06:13,071 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:07:03,165 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:07:03,165 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:07:53,260 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:07:53,260 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:08:43,356 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:08:43,356 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:09:33,452 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:09:33,452 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:10:23,549 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:10:23,549 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:11:13,642 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:11:13,642 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:12:03,736 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:12:03,736 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:12:53,830 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:12:53,830 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:13:44,137 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:13:44,138 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:14:34,239 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:14:34,239 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:15:24,335 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:15:24,336 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:16:14,433 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:16:14,433 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:17:04,530 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:17:04,531 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:17:54,629 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:17:54,630 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:18:44,728 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:18:44,728 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:19:34,857 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:19:34,858 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:20:24,959 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:20:24,959 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:21:15,057 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:21:15,057 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:22:05,162 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:22:05,162 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:22:55,259 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:22:55,260 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:23:45,356 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:23:45,356 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:24:35,456 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:24:35,457 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:25:25,557 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:25:25,558 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:26:15,659 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:26:15,659 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:27:05,759 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:27:05,759 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:27:55,856 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:27:55,856 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:28:45,955 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:28:45,955 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:29:36,053 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:29:36,053 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:30:26,150 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:30:26,150 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:31:16,248 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:31:16,248 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:32:06,356 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:32:06,357 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:32:56,455 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:32:56,455 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:33:46,554 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:33:46,554 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:34:36,653 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:34:36,653 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:35:26,752 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:35:26,752 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:36:16,848 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:36:16,848 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:37:06,947 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:37:06,947 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:37:57,045 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:37:57,045 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:38:47,142 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:38:47,143 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:39:37,239 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:39:37,240 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:40:27,341 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:40:27,341 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:41:17,443 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:41:17,443 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:42:07,544 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:42:07,544 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:42:57,642 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:42:57,642 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:43:47,739 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:43:47,739 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:44:37,838 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:44:37,838 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:45:27,945 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:45:27,945 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:46:18,042 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:46:18,043 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:47:08,139 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:47:08,139 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:47:58,243 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:47:58,243 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:48:48,339 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:48:48,339 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:49:38,443 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:49:38,443 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:50:28,540 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:50:28,541 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:51:18,640 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:51:18,640 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:52:08,737 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:52:08,738 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:52:58,835 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:52:58,835 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:53:48,935 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:53:48,936 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:54:39,031 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:54:39,032 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:55:29,131 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:55:29,131 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:56:19,228 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:56:19,228 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:57:09,331 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:57:09,331 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:57:59,426 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:57:59,427 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:58:49,523 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:58:49,523 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 03:59:39,619 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 03:59:39,619 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:00:29,715 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:00:29,715 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:01:19,812 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:01:19,812 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:02:09,917 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:02:09,918 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:03:00,022 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:03:00,022 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:03:50,121 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:03:50,121 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:04:40,220 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:04:40,220 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:05:30,318 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:05:30,318 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:06:20,415 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:06:20,416 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:07:10,513 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:07:10,513 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:08:00,614 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:08:00,614 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:08:50,711 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:08:50,711 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:09:40,808 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:09:40,809 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:10:30,906 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:10:30,906 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:11:21,003 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:11:21,004 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:12:11,111 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:12:11,111 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:13:01,211 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:13:01,211 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:13:51,309 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:13:51,309 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:14:41,406 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:14:41,406 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:15:31,508 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:15:31,508 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:16:21,606 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:16:21,607 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:17:11,704 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:17:11,704 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:18:01,803 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:18:01,803 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:18:51,902 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:18:51,902 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:19:42,004 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:19:42,004 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:20:32,102 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:20:32,102 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:21:22,201 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:21:22,201 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:22:12,313 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:22:12,313 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:23:02,410 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:23:02,410 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:23:52,509 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:23:52,509 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:24:42,607 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:24:42,607 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:25:32,704 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:25:32,705 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:26:22,802 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:26:22,803 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:27:12,899 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:27:12,899 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:28:02,995 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:28:02,996 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:28:53,095 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:28:53,095 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:29:43,193 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:29:43,193 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:30:33,291 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:30:33,291 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:31:23,390 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:31:23,390 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:32:13,488 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:32:13,488 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:33:03,599 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:33:03,599 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:33:53,700 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:33:53,700 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:34:43,800 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:34:43,801 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:35:33,903 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:35:33,903 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:36:24,000 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:36:24,001 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:37:14,325 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:37:14,325 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:38:04,437 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:38:04,437 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:38:54,544 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:38:54,544 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:39:44,648 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:39:44,648 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:40:34,752 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:40:34,753 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:41:24,857 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:41:24,857 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:42:14,960 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:42:14,960 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:43:05,066 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:43:05,066 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:43:55,171 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:43:55,172 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:44:45,275 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:44:45,276 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:45:35,379 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:45:35,380 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:46:25,493 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:46:25,494 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:47:15,596 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:47:15,597 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:48:05,701 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:48:05,701 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:48:55,805 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:48:55,805 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:49:45,909 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:49:45,909 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:50:36,014 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:50:36,014 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:51:26,117 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:51:26,117 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:52:16,222 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:52:16,222 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:53:06,326 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:53:06,327 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:53:56,433 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:53:56,434 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:54:46,540 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:54:46,540 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:55:36,643 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:55:36,644 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:56:26,747 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:56:26,747 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:57:16,857 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:57:16,857 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:58:06,961 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:58:06,961 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:58:57,072 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:58:57,072 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 04:59:47,176 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 04:59:47,177 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:00:37,293 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:00:37,293 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:01:27,389 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:01:27,389 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:02:17,485 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:02:17,485 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:03:07,580 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:03:07,580 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:03:57,676 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:03:57,677 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:04:47,774 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:04:47,775 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:05:37,870 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:05:37,870 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:06:27,976 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:06:27,976 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:07:18,072 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:07:18,072 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:08:08,168 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:08:08,168 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:08:58,265 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:08:58,265 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:09:48,361 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:09:48,362 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:10:38,457 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:10:38,457 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:11:28,554 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:11:28,554 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:12:18,652 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:12:18,652 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:13:08,750 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:13:08,750 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:13:58,846 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:13:58,847 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:14:48,942 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:14:48,942 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:15:39,038 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:15:39,038 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:16:29,133 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:16:29,133 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:17:19,227 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:17:19,227 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:18:09,323 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:18:09,323 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:18:59,422 DEBUG    errbot.backends.telegram_messenger All updates processed, new offset is 216189352
+2022-01-19 05:18:59,423 DEBUG    errbot.backends.telegram_messenger Getting updates with offset 216189352
+2022-01-19 05:20:01,488 ERROR    errbot.backends.telegram_messenger Error reading from Telegram updates stream:
+Traceback (most recent call last):
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.8/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.8/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/utils/request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/vendor/ptb_urllib3/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 404, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout,
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=62.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/errbot/backends/telegram_messenger.py", line 239, in serve_once
+    for update in self.telegram.getUpdates(offset=offset, timeout=60):
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/bot.py", line 3054, in get_updates
+    self._post(
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+  File "/home/dake/opera/errbot/env/lib/python3.8/site-packages/telegram/utils/request.py", line 261, in _request_wrapper
+    raise TimedOut() from error
+telegram.error.TimedOut: Timed out
+2022-01-19 05:20:01,511 DEBUG    errbot.backends.telegram_messenger Triggering disconnect callback
+2022-01-19 05:20:01,512 INFO     errbot.core               Disconnect callback, deactivating all the plugins.
+2022-01-19 05:20:01,517 DEBUG    errbot.storage            Closed storage 'Plugins'
+2022-01-19 05:20:01,523 DEBUG    errbot.storage            Closed storage 'ACLs'
+2022-01-19 05:20:01,525 DEBUG    errbot.core               Removing command filter: acls
+2022-01-19 05:20:01,528 DEBUG    errbot.storage            Closed storage 'Help'
+2022-01-19 05:20:01,530 DEBUG    errbot.botplugin          You still have active pollers at deactivation stage, I cleaned them up for you.
+2022-01-19 05:20:01,539 DEBUG    errbot.storage            Closed storage 'VersionChecker'
+2022-01-19 05:20:01,543 DEBUG    errbot.storage            Closed storage 'Flows'
+2022-01-19 05:20:01,549 DEBUG    errbot.storage            Closed storage 'CommandNotFoundFilter'
+2022-01-19 05:20:01,550 DEBUG    errbot.core               Removing command filter: cnf_filter
+2022-01-19 05:20:01,552 DEBUG    errbot.storage            Closed storage 'Health'
+2022-01-19 05:20:01,555 DEBUG    errbot.storage            Closed storage 'Utils'
+2022-01-19 05:20:01,559 DEBUG    errbot.storage            Closed storage 'Backup'
+2022-01-19 05:20:01,563 DEBUG    errbot.storage            Closed storage 'ChatRoom'
+2022-01-19 05:20:01,565 DEBUG    errbot.storage            Closed storage 'Example'
+2022-01-19 05:20:01,567 INFO     errbot.backends.base      Reconnecting in 1 seconds (0 attempted reconnections so far).
+2022-01-19 05:20:02,569 INFO     errbot.backends.telegram_messenger Initializing connection
+2022-01-19 09:32:49,873 WARNING  telegram.vendor.ptb_urllib3.urllib3.connectionpool Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fbc88104d00>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')': /bot5000899571:AAH4cS87dlO9BXCXoaxgEFYhR2ku9fwI1TU/getMe
+2022-01-19 09:33:45,918 INFO     errbot.backends.base      Interrupt received, shutting down..
+2022-01-19 09:33:45,919 INFO     errbot.backends.base      Trigger shutdown
+2022-01-19 09:33:45,921 DEBUG    errbot.storage            Closed storage 'telegram_backend'
+2022-01-19 09:33:45,921 INFO     errbot.plugin_manager     Shutdown.
+2022-01-19 09:33:45,922 DEBUG    errbot.storage            Closed storage 'core'
+2022-01-19 09:33:45,923 INFO     errbot.plugin_manager     Bye.
+2022-01-19 09:33:45,923 DEBUG    errbot.storage            Closed storage 'repomgr'
+2022-01-19 09:33:45,924 INFO     errbot.cli                Process exiting
