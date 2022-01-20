@@ -1,5 +1,5 @@
-from errbot import BotPlugin, botcmd, webhook
-
+from errbot import BotPlugin, botcmd
+from errbot import webhook
 
 class Example(BotPlugin):
     """
@@ -8,8 +8,6 @@ class Example(BotPlugin):
     You can find me in your init directory in the subdirectory plugins.
     """
     # self.bot_config.CHATROOM_PRESENCE вытащить все группы
-
-
     # простая команда
     @botcmd
     def tryme(self, msg, args):
@@ -30,7 +28,8 @@ class Example(BotPlugin):
     # функция инициализации когда плагин подключается
     # и пример отправки сообщения
     def activate(self):
-        # super().activate()
+        # НЕ ЗАБЫВАТЬ! ломает бота без ошибки потом не найдешь!
+        super().activate()
         self.send(
             self.build_identifier("-732525540"),
             "Plugin activated",
