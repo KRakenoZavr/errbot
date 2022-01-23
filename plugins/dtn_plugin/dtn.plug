@@ -1,0 +1,9 @@
+[Core]
+Name = DTN Plugin
+Module = dtn
+
+[Documentation]
+Description = DTN Plugin.
+
+[Python]
+Version = 2+
