@@ -42,7 +42,7 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt/archives
 
-RUN mkdir /app
+RUN mkdir /app /srv/data /srv/plugins /srv/errbackends
 
 COPY requirements.txt /app/requirements.txt
 
@@ -51,8 +51,10 @@ RUN . /app/venv/bin/activate; pip install --no-cache-dir -r /app/requirements.tx
 
 COPY config.py /app/config.py
 COPY run.sh /app/venv/bin/run.sh
+COPY ./plugins /srv/plugins
 
-RUN mkdir /srv/data /srv/plugins /srv/errbackends && chown -R $ERR_USER: /srv /app
+RUN chown -R $ERR_USER: /srv /app
+
 
 EXPOSE 3141 3142
 VOLUME ["/srv"]
