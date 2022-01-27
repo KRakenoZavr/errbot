@@ -53,7 +53,7 @@ COPY config.py /app/config.py
 COPY run.sh /app/venv/bin/run.sh
 COPY ./plugins /srv/plugins
 
-RUN chown -R $ERR_USER. /srv /app
+RUN chown -R $ERR_USER. /srv /app && chmod +x /app/venv/bin/run.sh
 
 
 EXPOSE 3141 3142
