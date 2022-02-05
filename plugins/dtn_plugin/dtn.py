@@ -1,6 +1,6 @@
 from errbot import BotPlugin, botcmd
 from errbot.backends.telegram_messenger import TelegramPerson, TelegramRoom
-from dbs.mongoDB import MongoDB
+from mongoDB import MongoDB
 
 class DTN(BotPlugin):
     """
