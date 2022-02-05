@@ -11,8 +11,6 @@ done
 
 [[ -z ${ERRCONF} ]] && [[ ! -e "${ERRRUN}/config.py" ]] && cp /app/config.py ${ERRRUN}
 
-cp -r /app/dbs ${ERRRUN}
-
 # sleep if we need to wait for another container
 if [[ -n ${WAIT} ]]; then
     echo "Sleep ${WAIT} seconds before starting err..."
