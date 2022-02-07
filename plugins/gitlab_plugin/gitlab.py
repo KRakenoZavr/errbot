@@ -100,7 +100,22 @@ def generateCommentMsg(data):
 
 
 def generateMergeRequestMsg(data):
-    return 'new MergeRequest'
+    oa = data['object_attributes']
+    msg = ("Merge request on project **"
+            + data["project"]["name"] + "**"
+            + "\nTitle : "
+            + oa["title"]
+            + "\nSource branch : "
+            + oa["source_branch"]
+            + "\nTarget branch : "
+            + oa["target_branch"]
+            + "\nMerge status : "
+            + oa["merge_status"]
+            + "\nState : "
+            + oa["state"]
+            + "\nURL : "
+            + oa["url"])
+    return msg
 
 
 def generateWikiMsg(data):
