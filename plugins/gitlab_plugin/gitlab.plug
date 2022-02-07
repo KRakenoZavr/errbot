@@ -1,0 +1,9 @@
+[Core]
+Name = Gitlab Plugin
+Module = gitlab
+
+[Documentation]
+Description = Gitlab Webhook Reciever
+
+[Python]
+Version = 2+
