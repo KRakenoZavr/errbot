@@ -44,14 +44,17 @@ def generatePushMsg(data):
     msg += f'<a href="{project["web_url"]}/compare/{data["before"]}...{data["after"]}">pushed</a> '
     msg += f'to <u><a href="{project["web_url"]}">{project["name"]}</a></u>:'
     msg += "\n"
-    modified_files = 0
-    added_files = 0
-    removed_files = 0
+    modified_files = dict()
+    added_files = dict()
+    removed_files = dict()
     if len(data["commits"]):
         for commit in data["commits"]:
-            modified_files += len(commit["added"])
-            added_files += len(commit["modified"])
-            removed_files += len(commit["removed"])
+            for file in commit["added"]:
+                added_files[file] = 1
+            for file in commit["modified"]:
+                modified_files[file] = 1
+            for file in commit["removed"]:
+                removed_files[file] = 1
         for commit in data["commits"][:2]:
             msg += f'{commit["author"]["name"]}: '
             msg += f'<a href="{commit["url"]}">'
@@ -78,28 +81,28 @@ def generatePushMsg(data):
 
     msg += "\n"
     info_added = False
-    if modified_files:
-        msg += f'{modified_files} '
+    if len(modified_files.keys()):
+        msg += f'<b>{len(modified_files.keys())}</b> '
         if not info_added:
-            if modified_files > 1:
+            if len(modified_files.keys()) > 1:
                 msg += "files "
             else:
                 msg += "file "
         msg += "modified "
         info_added = True
-    if added_files:
-        msg += f'{added_files} '
+    if len(added_files.keys()):
+        msg += f'<b>{len(added_files.keys())}</b> '
         if not info_added:
-            if added_files > 1:
+            if len(added_files.keys()) > 1:
                 msg += "files "
             else:
                 msg += "file "
         msg += "added "
         info_added = True
-    if removed_files:
-        msg += f'{removed_files} '
+    if len(removed_files.keys()):
+        msg += f'<b>{len(removed_files.keys())}</b> '
         if not info_added:
-            if removed_files > 1:
+            if len(removed_files.keys()) > 1:
                 msg += "files "
             else:
                 msg += "file "
@@ -155,24 +158,27 @@ def generateMergeRequestMsg(data):
     msg = ""
 
     oa = data["object_attributes"]
-    if oa["action"] == "open" or oa["action"] == "reopen":
+    key = "action"
+    if key not in oa:
+        key = "state"
+    if oa[key] == "open" or oa[key] == "reopen":
         msg += f'<i><b>{user["username"]}</b></i> '
-        msg += f'{oa["action"]}ed '
+        msg += f'{oa[key]}ed '
         msg += f'<a href="{oa["url"]}">merge request !{oa["iid"]}</a> '
         msg += f'at <u><a href="{project["web_url"]}">{project["name"]}</a></u>:'
         msg += "\n"
-        msg += f'<pre><code>{oa["title"]}</code><pre>'
+        msg += f'<pre><code>{oa["title"]}</code></pre>'
     else:
         msg += f'<a href="{oa["url"]}">merge request !{oa["iid"]}</a> '
-        if oa["action"] == "approved" or oa["action"] == "unapproved":
-            msg += f'{oa["action"]} by '
+        if oa[key] == "close" or oa[key] == "update" or oa[key] == "merge":
+            msg += f'{oa[key]}d by '
         else:
-            msg += f'{oa["action"]}d by '
+            msg += f'{oa[key]} by '
         msg += f'<i><b>{user["username"]}</b></i> '
         msg += f'at <u><a href="{project["web_url"]}">{project["name"]}</a></u> '
-        if oa["action"] == "close":
+        if oa[key] == "close" or oa[key] == "closed" :
             msg += "❌"
-        if oa["action"] == "merge":
+        if oa[key] == "merge" or oa[key] == "merged":
             msg += "✅"
     return msg
 
