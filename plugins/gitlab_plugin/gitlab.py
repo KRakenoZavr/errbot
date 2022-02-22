@@ -155,24 +155,27 @@ def generateMergeRequestMsg(data):
     msg = ""
 
     oa = data["object_attributes"]
-    if oa["action"] == "open" or oa["action"] == "reopen":
+    key = "action"
+    if key not in oa:
+        key = "state"
+    if oa[key] == "open" or oa[key] == "reopen":
         msg += f'<i><b>{user["username"]}</b></i> '
-        msg += f'{oa["action"]}ed '
+        msg += f'{oa[key]}ed '
         msg += f'<a href="{oa["url"]}">merge request !{oa["iid"]}</a> '
         msg += f'at <u><a href="{project["web_url"]}">{project["name"]}</a></u>:'
         msg += "\n"
         msg += f'<pre><code>{oa["title"]}</code><pre>'
     else:
         msg += f'<a href="{oa["url"]}">merge request !{oa["iid"]}</a> '
-        if oa["action"] == "approved" or oa["action"] == "unapproved":
-            msg += f'{oa["action"]} by '
+        if oa[key] == "close" or oa[key] == "update" or oa[key] == "merge":
+            msg += f'{oa[key]}d by '
         else:
-            msg += f'{oa["action"]}d by '
+            msg += f'{oa[key]} by '
         msg += f'<i><b>{user["username"]}</b></i> '
         msg += f'at <u><a href="{project["web_url"]}">{project["name"]}</a></u> '
-        if oa["action"] == "close":
+        if oa[key] == "close" or oa[key] == "closed" :
             msg += "❌"
-        if oa["action"] == "merge":
+        if oa[key] == "merge" or oa[key] == "merged":
             msg += "✅"
     return msg
 
