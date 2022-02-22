@@ -20,40 +20,90 @@ class Gitlab(BotPlugin):
         # https://docs.gitlab.com/ce/user/project/integrations/webhooks.html
         # for more infos
         kind = data['object_kind']
+        self.log.info(f"Message Kind: {kind}")
         if kind == 'push':
             msg = generatePushMsg(data)
-        elif kind == 'tag_push':
-            msg = generatePushMsg(data)  # TODO:Make own function for this
-        elif kind == 'issue':
-            msg = generateIssueMsg(data)
-        elif kind == 'note':
-            msg = generateCommentMsg(data)
+            self.send_to_chats(msg)
         elif kind == 'merge_request':
             msg = generateMergeRequestMsg(data)
-        elif kind == 'wiki_page':
-            msg = generateWikiMsg(data)
-        elif kind == 'pipeline':
-            msg = generatePipelineMsg(data)
-        elif kind == 'build':
-            msg = generateBuildMsg(data)
-        self.send_to_chats(msg)
+            self.send_to_chats(msg)
         return jsonify({'status': 'ok'})
 
     def send_to_chats(self, msg):
         self.send(
-            self.build_identifier("-732525540"),
+            self.build_identifier("-1001411828593"),
+            # self.build_identifier("-1001691601943"),
             msg
         )
 
 
 def generatePushMsg(data):
-    msg = '*{0} ({1}) - {2} new commits*\n'\
-        .format(data['project']['name'], data['project']['default_branch'], data['total_commits_count'])
-    for commit in data['commits']:
-        msg = msg + '----------------------------------------------------------------\n'
-        msg = msg + commit['message'].rstrip()
-        msg = msg + '\n' + commit['url'].replace("_", "\_") + '\n'
-    msg = msg + '----------------------------------------------------------------\n'
+    user = data["user_username"]
+    project = data["project"]
+    msg = f'<i><b>{user}</b></i> '
+    msg += f'<a href="{project["web_url"]}/compare/{data["before"]}...{data["after"]}">pushed</a> '
+    msg += f'to <u><a href="{project["web_url"]}">{project["name"]}</a></u>:'
+    msg += "\n"
+    modified_files = 0
+    added_files = 0
+    removed_files = 0
+    if len(data["commits"]):
+        for commit in data["commits"]:
+            modified_files += len(commit["added"])
+            added_files += len(commit["modified"])
+            removed_files += len(commit["removed"])
+        for commit in data["commits"][:2]:
+            msg += f'{commit["author"]["name"]}: '
+            msg += f'<a href="{commit["url"]}">'
+
+            msg += f"{commit['title']}"
+            msg += "</a>"
+            msg += "\n"
+        if len(data["commits"]) > 2:
+            msg += "... else "
+            msg += f'<a href="{project["web_url"]}/compare/{data["before"]}...{data["after"]}">{len(data["commits"])-2} '
+            if (len(data["commits"])-2) > 1:
+                msg += "commits</a>"
+            else:
+                msg += "commit</a>"
+        else:
+            msg += "\n"
+            msg += f'<a href="{project["web_url"]}/compare/{data["before"]}...{data["after"]}">{len(data["commits"])} '
+            if len(data["commits"]) > 1:
+                msg += "commits</a>"
+            else:
+                msg += "commit</a>"
+    else:
+        msg += "<b>0 commits<\b>"
+
+    msg += "\n"
+    info_added = False
+    if modified_files:
+        msg += f'{modified_files} '
+        if not info_added:
+            if modified_files > 1:
+                msg += "files "
+            else:
+                msg += "file "
+        msg += "modified "
+        info_added = True
+    if added_files:
+        msg += f'{added_files} '
+        if not info_added:
+            if added_files > 1:
+                msg += "files "
+            else:
+                msg += "file "
+        msg += "added "
+        info_added = True
+    if removed_files:
+        msg += f'{removed_files} '
+        if not info_added:
+            if removed_files > 1:
+                msg += "files "
+            else:
+                msg += "file "
+        msg += "removed"
     return msg
 
 
@@ -100,21 +150,30 @@ def generateCommentMsg(data):
 
 
 def generateMergeRequestMsg(data):
-    oa = data['object_attributes']
-    msg = ("Merge request on project **"
-            + data["project"]["name"] + "**"
-            + "\nTitle : "
-            + oa["title"]
-            + "\nSource branch : "
-            + oa["source_branch"]
-            + "\nTarget branch : "
-            + oa["target_branch"]
-            + "\nMerge status : "
-            + oa["merge_status"]
-            + "\nState : "
-            + oa["state"]
-            + "\nURL : "
-            + oa["url"])
+    user = data["user"]
+    project = data["project"]
+    msg = ""
+
+    oa = data["object_attributes"]
+    if oa["action"] == "open" or oa["action"] == "reopen":
+        msg += f'<i><b>{user["username"]}</b></i> '
+        msg += f'{oa["action"]}ed '
+        msg += f'<a href="{oa["url"]}">merge request !{oa["iid"]}</a> '
+        msg += f'at <u><a href="{project["web_url"]}">{project["name"]}</a></u>:'
+        msg += "\n"
+        msg += f'<pre><code>{oa["title"]}</code><pre>'
+    else:
+        msg += f'<a href="{oa["url"]}">merge request !{oa["iid"]}</a> '
+        if oa["action"] == "approved" or oa["action"] == "unapproved":
+            msg += f'{oa["action"]} by '
+        else:
+            msg += f'{oa["action"]}d by '
+        msg += f'<i><b>{user["username"]}</b></i> '
+        msg += f'at <u><a href="{project["web_url"]}">{project["name"]}</a></u> '
+        if oa["action"] == "close":
+            msg += "❌"
+        if oa["action"] == "merge":
+            msg += "✅"
     return msg
 
 
