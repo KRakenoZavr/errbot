@@ -1,0 +1,9 @@
+[Core]
+Name = Errors receiver
+Module = errors
+
+[Documentation]
+Description = Errors Reciever Plugin
+
+[Python]
+Version = 2+

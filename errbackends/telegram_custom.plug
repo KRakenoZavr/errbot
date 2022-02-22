@@ -1,0 +1,6 @@
+[Core]
+Name = TelegramCustom
+Module = telegram_custom
+
+[Documentation]
+Description = This is the Telegram backend for Errbot.

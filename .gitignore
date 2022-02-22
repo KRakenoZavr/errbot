@@ -3,3 +3,4 @@ env/
 .env
 errbot.log
 data/
+.idea

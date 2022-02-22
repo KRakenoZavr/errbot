@@ -9,7 +9,7 @@ dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
 # privacy в настройках botfather нужно отключить для групп
-BACKEND = 'Telegram'
+BACKEND = 'TelegramCustom'
 BOT_IDENTITY = {
     'token': os.environ.get('BOT_TOKEN'),
 }
