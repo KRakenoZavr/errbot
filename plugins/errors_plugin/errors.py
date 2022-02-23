@@ -39,6 +39,7 @@ class Errors(BotPlugin):
     def send_to_chats(self, msg):
         self.send(
             self.build_identifier("-1001530829894"),
+            # self.build_identifier("-1001691601943"),
             msg
         )
 

@@ -33,6 +33,8 @@ RUN apt-get update \
          python3-pyasn1 \
          python3-geoip \
          python3-lxml \
+         libpq-dev \
+         gcc \
     && locale-gen C.UTF-8 \
     && /usr/sbin/update-locale LANG=C.UTF-8 \
     && echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen \
@@ -42,7 +44,7 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt/archives
 
-RUN mkdir /app /srv/data /srv/plugins /srv/errbackends
+RUN mkdir /app /srv/data /srv/plugins /srv/errbackends /srv/errstorages
 
 COPY requirements.txt /app/requirements.txt
 
@@ -53,6 +55,7 @@ COPY config.py /app/config.py
 COPY run.sh /app/venv/bin/run.sh
 COPY ./plugins /srv/plugins
 COPY ./errbackends /srv/errbackends
+COPY ./errstorages /srv/errstorages
 
 RUN chown -R $ERR_USER. /srv /app && chmod +x /app/venv/bin/run.sh
 
