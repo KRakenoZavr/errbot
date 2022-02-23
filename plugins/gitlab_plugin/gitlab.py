@@ -109,49 +109,6 @@ def generatePushMsg(data):
         msg += "removed"
     return msg
 
-
-def generateIssueMsg(data):
-    action = data['object_attributes']['action']
-    if action == 'open':
-        assignees = ''
-        for assignee in data.get('assignees', []):
-            assignees += assignee['name'] + ' '
-        msg = '*{0}* new issue for *{1}*:\n'\
-            .format(data['project']['name'], assignees)
-    elif action == 'reopen':
-        assignees = ''
-        for assignee in data.get('assignees', []):
-            assignees += assignee['name'] + ' '
-        msg = '*{0}* issue re-opened for *{1}*:\n'\
-            .format(data['project']['name'], assignees)
-    elif action == 'close':
-        msg = '*{0}* issue closed by *{1}*:\n'\
-            .format(data['project']['name'], data['user']['name'])
-    elif action == 'update':
-        assignees = ''
-        for assignee in data.get('assignees', []):
-            assignees += assignee['name'] + ' '
-        msg = '*{0}* issue assigned to *{1}*:\n'\
-            .format(data['project']['name'], assignees)
-
-    msg = msg + '[{0}]({1})'\
-        .format(data['object_attributes']['title'], data['object_attributes']['url'])
-    return msg
-
-
-def generateCommentMsg(data):
-    ntype = data['object_attributes']['noteable_type']
-    if ntype == 'Commit':
-        msg = 'note to commit'
-    elif ntype == 'MergeRequest':
-        msg = 'note to MergeRequest'
-    elif ntype == 'Issue':
-        msg = 'note to Issue'
-    elif ntype == 'Snippet':
-        msg = 'note on code snippet'
-    return msg
-
-
 def generateMergeRequestMsg(data):
     user = data["user"]
     project = data["project"]
@@ -181,15 +138,3 @@ def generateMergeRequestMsg(data):
         if oa[key] == "merge" or oa[key] == "merged":
             msg += "✅"
     return msg
-
-
-def generateWikiMsg(data):
-    return 'new wiki stuff'
-
-
-def generatePipelineMsg(data):
-    return 'new pipeline stuff'
-
-
-def generateBuildMsg(data):
-    return 'new build stuff'
