@@ -26,9 +26,9 @@ class Errors(BotPlugin):
         data = request
         print(data['error'])
         try:
-            msg = f" ==>  <b>{data['nameService']}</b>"
+            msg = f'error in <b>{data["nameService"]}</b>'
             msg += "\n"
-            msg += f"<b>ERROR</b>: {data['error']}"
+            msg += f'<pre><code>{data["error"]}</code></pre>'
         except Exception as e:
             print(e)
             msg = f"An exception occurred while trying to parse message from service"
