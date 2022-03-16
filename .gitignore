@@ -4,3 +4,4 @@ env/
 errbot.log
 data/
 .idea
+venv/

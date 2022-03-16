@@ -1,0 +1,9 @@
+[Core]
+Name = Pinger
+Module = pinger
+
+[Documentation]
+Description = pings all services
+
+[Python]
+Version = 2+
