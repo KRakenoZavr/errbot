@@ -47,11 +47,11 @@ class Pinger(BotPlugin):
         try:
             r = requests.request(method="GET", url=item["endpoint"], timeout=30)
             if r.status_code >= 500:
-                self.warn_admins(f"Не работает сервис: {item['name']}")
-                # self.send_to_chats(f"Не работает сервис: {item['name']}")
+                # self.warn_admins(f"Не работает сервис: {item['name']}")
+                self.send_to_chats(f"Не работает сервис: {item['name']}")
         except:
-            self.warn_admins(f"Не работает сервис: {item['name']}")
-            # self.send_to_chats(f"Не работает сервис: {item['name']}")
+            # self.warn_admins(f"Не работает сервис: {item['name']}")
+            self.send_to_chats(f"Не работает сервис: {item['name']}")
 
     def send_to_chats(self, msg):
         self.send(
@@ -63,8 +63,8 @@ class Pinger(BotPlugin):
     def send_active_jobs(self):
         job_ids = [item.id for item in self.scheduler.get_jobs()]
         job_ids = '\n'.join(job_ids)
-        self.warn_admins(f"Active pinging services: \n{job_ids}")
-        # self.send_to_chats(f"Active pinging services: \n{job_ids}")
+        # self.warn_admins(f"Active pinging services: \n{job_ids}")
+        self.send_to_chats(f"Active pinging services: \n{job_ids}")
 
     # get all tasks from mongo
     def get_tasks_list(self):
