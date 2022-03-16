@@ -71,6 +71,7 @@ class Pinger(BotPlugin):
             password = self.bot_config.__getattribute__(item["password"])
             r = Redis(host=item["host"], port=item["port"], socket_connect_timeout=1, password=password)
             r.ping()
+            r.close()
         except:
             # self.warn_admins(f"Не работает сервис: {item['name']}")
             self.send_to_chats(f"Не работает сервис: {item['name']}")
