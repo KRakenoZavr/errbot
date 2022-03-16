@@ -1,5 +1,7 @@
 import requests
+import couchdb
 from errbot import BotPlugin, botcmd
+from redis import Redis
 from apscheduler.schedulers.background import BackgroundScheduler
 from mongoDB import MongoDB
 
@@ -24,6 +26,11 @@ class Pinger(BotPlugin):
     # def third(self, msg, args):
     #     return msg.ctx["service_action"]
 
+    @botcmd()
+    def remove_all_job(self):
+        self.scheduler.remove_all_jobs()
+        return "removed all jobs"
+
     def activate(self):
         super().activate()
         if not hasattr(self, "scheduler"):
@@ -42,6 +49,31 @@ class Pinger(BotPlugin):
             if item["action"] == "request":
                 self.scheduler.add_job(self.job_type_request, 'interval', [item], minutes=5,
                                        id=item["name"])
+            elif item["action"] == "redis":
+                self.scheduler.add_job(self.job_type_redis, 'interval', [item], minutes=5,
+                                       id=item["name"])
+            elif item["action"] == "couchdb":
+                self.scheduler.add_job(self.job_type_request, 'interval', [item], minutes=5,
+                                       id=item["name"])
+
+    def job_type_couchdb(self, item):
+        try:
+            db = couchdb.Server(item["endpoint"])
+            db.version()
+        except couchdb.http.Unauthorized:
+            pass
+        except:
+            # self.warn_admins(f"Не работает сервис: {item['name']}")
+            self.send_to_chats(f"Не работает сервис: {item['name']}")
+
+    def job_type_redis(self, item):
+        try:
+            password = self.bot_config.__getattribute__(item["password"])
+            r = Redis(host=item["host"], port=item["port"], socket_connect_timeout=1, password=password)
+            r.ping()
+        except:
+            # self.warn_admins(f"Не работает сервис: {item['name']}")
+            self.send_to_chats(f"Не работает сервис: {item['name']}")
 
     def job_type_request(self, item):
         try:
