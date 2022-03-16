@@ -67,14 +67,18 @@ class Pinger(BotPlugin):
             self.send_to_chats(f"Не работает сервис: {item['name']}")
 
     def job_type_redis(self, item):
+        r = None
         try:
             password = self.bot_config.__getattribute__(item["password"])
             r = Redis(host=item["host"], port=item["port"], socket_connect_timeout=1, password=password)
             r.ping()
-            r.close()
         except:
             # self.warn_admins(f"Не работает сервис: {item['name']}")
             self.send_to_chats(f"Не работает сервис: {item['name']}")
+        finally:
+            if r is not None:
+                r.close()
+
 
     def job_type_request(self, item):
         try:
