@@ -53,7 +53,7 @@ class Pinger(BotPlugin):
                 self.scheduler.add_job(self.job_type_redis, 'interval', [item], minutes=5,
                                        id=item["name"])
             elif item["action"] == "couchdb":
-                self.scheduler.add_job(self.job_type_request, 'interval', [item], minutes=5,
+                self.scheduler.add_job(self.job_type_couchdb, 'interval', [item], minutes=5,
                                        id=item["name"])
 
     def job_type_couchdb(self, item):
