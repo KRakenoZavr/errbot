@@ -27,6 +27,13 @@ class Pinger(BotPlugin):
     #     return msg.ctx["service_action"]
 
     @botcmd()
+    def create_jobs(self):
+        self.scheduler.remove_all_jobs()
+        self.create_jobs(self.get_tasks_list())
+        self.send_active_jobs()
+        return "done"
+
+    @botcmd()
     def remove_all_job(self):
         self.scheduler.remove_all_jobs()
         return "removed all jobs"
@@ -58,7 +65,10 @@ class Pinger(BotPlugin):
 
     def job_type_couchdb(self, item):
         try:
+            username = self.bot_config.__getattribute__(item["user"])
+            password = self.bot_config.__getattribute__(item["password"])
             db = couchdb.Server(item["endpoint"])
+            db.login(name=username, password=password)
             db.version()
         except couchdb.http.Unauthorized:
             pass
@@ -78,7 +88,6 @@ class Pinger(BotPlugin):
         finally:
             if r is not None:
                 r.close()
-
 
     def job_type_request(self, item):
         try:
