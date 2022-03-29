@@ -26,15 +26,24 @@ class Pinger(BotPlugin):
     # def third(self, msg, args):
     #     return msg.ctx["service_action"]
 
+    # TODO make only 1 command but with args
     @botcmd()
-    def create_jobs(self):
+    def pingmanually(self, msg, args):
+        """
+        ping all services by bot command
+        """
+        self.run_manually_jobs(self.get_tasks_list())
+        return "done"
+
+    @botcmd()
+    def createpingjobs(self, msg, args):
         self.scheduler.remove_all_jobs()
         self.create_jobs(self.get_tasks_list())
         self.send_active_jobs()
         return "done"
 
     @botcmd()
-    def remove_all_job(self):
+    def remove_all_job(self, msg, args):
         self.scheduler.remove_all_jobs()
         return "removed all jobs"
 
@@ -50,6 +59,16 @@ class Pinger(BotPlugin):
         self.scheduler.remove_all_jobs()
         self.create_jobs(self.get_tasks_list())
         self.send_active_jobs()
+
+    # TODO make both func normal
+    def run_manually_jobs(self, tasks):
+        for item in tasks:
+            if item["action"] == "request":
+                self.job_type_request(item)
+            elif item["action"] == "redis":
+                self.job_type_redis(item)
+            elif item["action"] == "couchdb":
+                self.job_type_couchdb(item)
 
     def create_jobs(self, tasks):
         for item in tasks:
