@@ -27,14 +27,14 @@ class Pinger(BotPlugin):
     #     return msg.ctx["service_action"]
 
     @botcmd()
-    def create_jobs(self):
+    def createpingjobs(self, msg, args):
         self.scheduler.remove_all_jobs()
         self.create_jobs(self.get_tasks_list())
         self.send_active_jobs()
         return "done"
 
     @botcmd()
-    def remove_all_job(self):
+    def remove_all_job(self, msg, args):
         self.scheduler.remove_all_jobs()
         return "removed all jobs"
 
