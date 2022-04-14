@@ -126,7 +126,8 @@ class Pinger(BotPlugin):
             if self.get_task_state(service_name) is False:
                 self.reschedule_service(service_name, True)
                 self.set_task_state(service_name, True)
-                self.warn_admins(f"Сервис заработал: {service_name}")
+                # self.warn_admins(f"Сервис заработал: {service_name}")
+                self.send_to_chats(f"Сервис заработал: {service_name}")
         else:
             # if it service was running and now down, reschedule to down interval
             if self.get_task_state(service_name) is True:
