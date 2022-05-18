@@ -4,6 +4,8 @@ from mongoDB import MongoDB
 from xml.etree import ElementTree
 import requests
 
+from pprint import pprint
+
 
 class DTN(BotPlugin):
     """
@@ -15,7 +17,9 @@ class DTN(BotPlugin):
         """
         Safe info of the group to the mongoDB
         """
-        if (type(msg.to) is TelegramPerson):
+        print("to::", msg.to)
+        # print("msg::", msg.to.title)
+        if not hasattr(msg.to, "title"):
             """
             Safe info works only for groups
             """
@@ -27,7 +31,8 @@ class DTN(BotPlugin):
             'title': msg.to.title,
             'type': 'supergroup'
         }
-        self.mongo_db.update_one('Groups', {'id': query['id']}, query, upsert=True)
+        print(query)
+        # self.mongo_db.update_one('Groups', {'id': query['id']}, query, upsert=True)
         return 'Группа успешно сохранена'  # This string format is markdown.
 
     @botcmd

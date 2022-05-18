@@ -1,0 +1,9 @@
+[Core]
+Name = MyFlows.
+Module = myflows.py
+
+[Documentation]
+Description = flow for pinger
+
+[Python]
+Version = 2+
